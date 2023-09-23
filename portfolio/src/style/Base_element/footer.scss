@@ -1,0 +1,20 @@
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../../assets/img/word-img.webp");
+    background-position: 400px -200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding:5% 0 10%;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    background: rgba(193, 249, 177, 0.381);
+    padding: 50px 20px;
+    border-radius: 10px;
+    box-shadow:2px 1px 75px #39f00667, 1px 1px 2px rgba(206, 89, 55, 0);;
+}
+

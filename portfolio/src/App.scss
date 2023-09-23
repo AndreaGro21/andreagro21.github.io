@@ -1,0 +1,40 @@
+@import "../src/style/Base_element/footer.scss";
+@import "../src/style/Base_element/nav.scss";
+@import "../src/style/Base_element/main.scss";
+@import "../src/style/components/video.scss";
+@import "../src/style/components/introduction.scss";
+@import "../src/style/components/service.scss";
+@import "../src/style/components/projectCard.scss";
+@import "../src/style/components/projects.scss";
+@import "../src/style/components/skills.scss";
+@import "../src/style/pages/aboutme.scss";
+html{
+    scroll-behavior:smooth;
+    overflow-x: hidden;
+
+}
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #fefefe;
+    background: #000;
+    scroll-behavior: smooth;
+    
+}
+h1,h2,h3,h4{
+    font-family: 'Bebas Neue', sans-serif;
+}
+p,div{
+    font-family: 'Kanit', sans-serif;
+}
+
+h2{
+    font-size: 4rem;
+    text-align: center;
+}
+h3{
+    font-size: 2rem;
+}
+
+

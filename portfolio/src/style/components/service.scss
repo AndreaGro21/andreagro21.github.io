@@ -1,0 +1,83 @@
+.service-container {
+    display: flex;
+    gap: 60px;
+    justify-content: space-around;
+}
+
+
+
+.service-card_container {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    align-items: center;
+    text-align: center;
+    --border-width: 1px;
+    position: relative;
+    background: rgba(0, 0, 0, 0.950);
+
+    border-radius: 10px;
+
+    &::after {
+        position: absolute;
+        content: "";
+        top: calc(-1 * var(--border-width));
+        left: calc(-1 * var(--border-width));
+        z-index: -1;
+        width: calc(100% + var(--border-width) * 2);
+        height: calc(100% + var(--border-width) * 2);
+        background: linear-gradient(60deg,
+                hsl(44, 85%, 66%),
+                hsl(44, 85%, 66%),
+                hsl(0, 100%, 100%),
+                hsl(134, 85%, 66%),
+                hsl(125, 85%, 66%));
+
+        background-size: 600% 400%;
+        background-position: 0 50%;
+        border-radius: calc(5 * 20px);
+    
+        animation: moveGradient 8s linear infinite;
+    }
+
+    p {
+        padding: 15% 10%;
+        transition: all 1s ease;
+        margin: 0;
+        &:hover{
+            scale: 1.1;
+            font-size: 1.1rem;
+            transition: all 1s ease;
+        }
+    }
+
+    h3 {
+        background: -webkit-linear-gradient(60deg,
+                hsl(120, 9%, 96%),
+                hsl(44, 85%, 66%),
+                hsl(0, 100%, 100%),
+                hsl(134, 85%, 66%),
+                hsl(125, 85%, 66%));
+        background-size: 500% auto;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: moveGradient 8s linear infinite;
+        display: inline-block;
+        margin-bottom: 0;
+
+    }
+}
+
+@keyframes moveGradient {
+    50% {
+        background-position: 100% 50%;
+    }
+}
+
+@keyframes textclip {
+    to {
+        background-position: 50% 0;
+        background-size: 600% 400%;
+    }
+}
