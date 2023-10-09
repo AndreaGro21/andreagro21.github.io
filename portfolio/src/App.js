@@ -27,6 +27,10 @@ soft-skills;
 technical skills;
 contact (con opione iserimento azienda)
 footer
+jest icon
+figma
+git
+swagger
 
 
 */

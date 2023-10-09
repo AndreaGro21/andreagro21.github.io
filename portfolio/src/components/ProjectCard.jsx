@@ -1,10 +1,12 @@
-function ProjectCard({projectTitle,projectDes,source} ){
 
-    return(
+
+function ProjectCard({ projectTitle, projectDes, source }) {
+
+    return (
         <div className="prj-card_container">
-        <h4>{projectTitle}</h4>
-        <p>{projectDes}</p>
-        <img src={source} alt={projectTitle} />
+            <h4>{projectTitle}</h4>
+            <p>{projectDes}</p>
+            <img src={source} alt={projectTitle} />
         </div>
     )
 }

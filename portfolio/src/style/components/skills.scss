@@ -1,6 +1,8 @@
 .skills-container {
     display: flex;
     justify-content: space-around;
+    text-align: center;
+    font-size: 2.5rem;
 
     .tech-skill_container,
     .soft-skill_container {
@@ -9,9 +11,8 @@
     }
 
     .tag-container {
-
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 0.5fr 0.5fr 0.5fr;
         grid-template-rows: 3 1fr;
         gap: 20px;
 
@@ -19,11 +20,52 @@
 
     .tag-card {
         color: #fff;
-        box-sizing: border-box;
-
+        position: relative;
+        transition: 0.5s all linear;
+        display: flex;
+        flex-direction: column;
+        h5, p {
+            font-size: 10px;
+            position: absolute;
+            bottom: 0;
+            text-align: center;
+        }
+        &:hover {
+            font-size: 22px;
+            filter: drop-shadow(0 0 0.75rem rgb(230, 200, 9));
+            scale: 1.1;
+            transition: 0.5s all linear;
+        }
         img {
-
+            display: flex;
+            width: 100%;
+            filter: drop-shadow(0 0 0.75rem rgb(167, 167, 161));
+            background: transparent;
             object-fit: contain;
+            margin-bottom: 20px;
         }
     }
+}
+
+
+.soft-skill_container {
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr;
+    grid-template-rows: 3 1fr;
+    gap: 25px;
+    text-align: center;
+
+}
+.skill-card{
+    flex-direction: row;
+font-size: 16px;
+h5{
+    width: 100%;
+    background: green;
+    border-radius: 10px;
+    padding: 10px;
+}
+p{
+    visibility: hidden;
+}
 }
