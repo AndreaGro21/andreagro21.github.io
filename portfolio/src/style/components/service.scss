@@ -1,20 +1,17 @@
 .service-container {
     display: flex;
-    gap: 60px;
+    gap: 50px;
     justify-content: space-around;
 }
-
-
-
 .service-card_container {
+    position: relative;
     display: flex;
     flex-direction: column;
     width: 25%;
     align-items: center;
     text-align: center;
     --border-width: 1px;
-    position: relative;
-    background: rgba(0, 0, 0, 0.950);
+    background: rgb(0, 0, 0);
 
     border-radius: 10px;
 
@@ -32,15 +29,14 @@
                 hsl(0, 100%, 100%),
                 hsl(134, 85%, 66%),
                 hsl(125, 85%, 66%));
-
         background-size: 600% 400%;
         background-position: 0 50%;
-        border-radius: calc(5 * 20px);
+        border-radius: calc(2 * 30px);
         animation: moveGradient 15s linear infinite;
     }
 
     p {
-        padding: 15% 10%;
+        padding: 0 10%;
         transition: all 1s ease;
         margin: 0;
    /*      &:hover{
@@ -64,6 +60,8 @@
         animation: moveGradient 15s linear infinite;
         display: inline-block;
         margin-bottom: 0;
+        position: relative;
+        top: -65px;
 
     }
 }

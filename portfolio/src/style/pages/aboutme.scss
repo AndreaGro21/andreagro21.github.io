@@ -1,6 +1,33 @@
-.cazzo{
-   color: red; 
-   width: 50px;
-   height: 300px;
-   background: red;
+.aboutme-container {
+   display: flex;
+   align-items:flex-start;
+   width: 100%;
+   height: 100vh;
+   padding-top: 70px;
+
+   img {
+      width: 20%;
+      height: 60%;
+      padding: 20px 40px;
+      border-radius: 75px ;
+   }
+
+.presentation-container{
+   display: flex;
+   flex-direction: column;
+   padding: 20px 40px;
+   align-items: flex-start;
+   text-align: left;
+   justify-content: flex-start;
+   
+}
+h2{
+   font-size: 1.4rem;
+}
+ p{
+   font-size: 1.1rem;
+   line-height: 2.2;
+ }
+
+
 }

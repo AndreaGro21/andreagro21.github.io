@@ -1,31 +1,29 @@
 import ServiceCard from "./ServiceCard"
 function Services (){
-const titleWebDev = `In the world of web development, one key aspect that sets apart successful websites is performance. Fast-loading websites are essential for user satisfaction and search engine rankings." 
-"No matter the website type, our performance-focused web development team tailors solutions to meet specific needs. "
-"We understand that every millisecond counts and is committed to delivering a website that loads swiftly, engages effectively, and drives results.`;
+const titleWebDev = `I can design and develop bespoke software to address your specific requirements, whether it's a web, mobile, or desktop application. I'm here to transform your ideas into high-quality code.`;
 const titlePerf = 
-"No matter the website type, our performance-focused web development team tailors solutions to meet specific needs. " +
-"We understand that every millisecond counts and is committed to delivering a website that loads swiftly, engages effectively, and drives results.";
-const titleSec = "In the world of web development, one key aspect that sets apart successful websites is performance. Fast-loading websites are essential for user satisfaction and search engine rankings." + 
-"No matter the website type, our performance-focused web development team tailors solutions to meet specific needs. " 
+"If you have an existing application that's sluggish or inefficient, I can optimize it to enhance performance and user satisfaction. Every millisecond counts, and swift loading is crucial.";
+const titleSec = "Data security is paramount. I can assist you in safeguarding sensitive data and implementing top-notch cybersecurity practices to prevent breaches. " 
+const titleGreen = `My support doesn't stop with project completion. I provide ongoing technical support, maintenance, and updates to keep your software up-to-date. Moreover, i'm committed to "green code" practices, optimizing performance while reducing environmental impact.`;
     return(
         <article>
-        <h2 id="my-service">My Services</h2>
+        <h2 id="my-service">What I Can Do For You:</h2>
+      {/*   <p>Technology has the power to transform your business and enhance efficiency in many ways. I'm here to guide you on this journey and ensure you gain the utmost value from your software development investment.</p> */}
         <div className="service-container">
         <ServiceCard 
-        title= "Web Development"
+        title= "Custom Software Development"
         textDescription = {titleWebDev}
         />
         <ServiceCard 
-        title= "Performance"
+        title= "Performance Optimization"
         textDescription = {titlePerf}
         />
          <ServiceCard 
-        title= " Optimization & Green Code"
-        textDescription = {titlePerf}
+        title= " Technical Support & Green Code"
+        textDescription = {titleGreen}
         />
         <ServiceCard 
-        title= "Security" 
+        title= "Data Security" 
         textDescription = {titleSec}
         />
         </div>

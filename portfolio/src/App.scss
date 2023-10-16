@@ -4,7 +4,6 @@
 @import "../src/style/components/video.scss";
 @import "../src/style/components/introduction.scss";
 @import "../src/style/components/service.scss";
-@import "../src/style/components/projectCard.scss";
 @import "../src/style/components/projects.scss";
 @import "../src/style/components/skills.scss";
 @import "../src/style/pages/aboutme.scss";
@@ -30,11 +29,15 @@ p,div{
 }
 
 h2{
-    font-size: 4rem;
+    font-size: 3rem;
     text-align: center;
 }
 h3{
     font-size: 2rem;
+}
+h4{
+    font-size: 2rem;
+    
 }
 
 

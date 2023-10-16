@@ -1,18 +1,25 @@
-import React from "react";
-import {Link} from 'react-router-dom';
+import React, {useEffect} from "react";
 
- function Introduction() {
-    return (
-        <div className="introduction-container">
-            <div className="about-me_title">
-                <p className="introduction-container_myself">Let me itroduce myself,my name is:</p>
-                <h1>Andrea Gronchi</h1>
-                <p><strong>Developpeur front-end</strong></p> {/* hover sul testo :Non sai cosa vuol dire front-end */}
-                <div>I build accessible, inclusive products and digital experiences for the web.</div>
-            </div>
-           <Link to="/AboutMe"> About me 🔎</Link> 
+function Introduction() {
+    useEffect(() => {
+        const text = "Andrea Gronchi";
+        const matrixContainer = document.querySelector(".matrix-container");
+    
+        text.split("").forEach((letter, index) => {
+          const letterSpan = document.createElement("span");
+          letterSpan.textContent = letter;
+          letterSpan.className = "matrix-letter";
+          letterSpan.style.animationDelay = `${index * 0.3}s`;
+          matrixContainer.appendChild(letterSpan);
+        });
+      }, []);
+    
+      return (
+        <div className="matrix-rain">
+          <div className="matrix-container" />
         </div>
-    )
+      );
+    }
 
-}
+
 export default Introduction

@@ -1,14 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
-function Nav (){
-return (
-    <nav className='nav-container'>
-        <Link to="/"> <img /></Link>
+function Nav() {
+    return (
+        <nav className='nav-container'>
+            <Link className="logo" to="/"> Ag</Link>
             <div className='nav-menu'>
-                <Link to="/" className="link">Accueil</Link>
-                <Link to="/AboutMe" className="link">About</Link>
+                <Link to="/projects" className="link">Projects</Link>
+                <Link to="/services" className="link">Services</Link>
+                <Link to="/aboutMe" className="link">About</Link>
             </div>
-</nav>
-)
+        </nav>
+    )
 }
 export default Nav

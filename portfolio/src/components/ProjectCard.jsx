@@ -1,17 +1,25 @@
+import { Link } from 'react-router-dom';
 
-
-function ProjectCard({ projectTitle, projectDes, source }) {
+function ProjectCard({ projectTitle, projectDes, source, id }) {
 
     return (
-        <div className="prj-card_container">
-            <h4>{projectTitle}</h4>
-            <p>{projectDes}</p>
-            <img src={source} alt={projectTitle} />
-        </div>
+        <>
+            <Link
+                to={`/projects/${id}`}
+                key={id}
+                className="prj-card_container">
+                <img src={source} alt={projectTitle} />
+                <div>
+                    <div>Description: </div>   {projectDes}
+                </div>
+                <h4>
+                    <span>Title: </span>{projectTitle}
+                </h4>
+            </Link >
+        </>
     )
 }
 
 export default ProjectCard
 
 
-//Slider solo se piu di 4 elementi? posso farmi un data.json??
