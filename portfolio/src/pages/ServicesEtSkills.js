@@ -1,17 +1,9 @@
 import Services from "../components/Services"
 
-function ServicesEtSkills(){
-
-
-    return(
-
-<Services />
-
-
+function ServicesEtSkills() {
+    return (
+        <Services />
     )
-
-
-
 }
 
 

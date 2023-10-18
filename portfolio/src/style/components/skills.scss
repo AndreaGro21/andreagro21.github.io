@@ -1,4 +1,43 @@
-.skills-container {
+
+.tec-skills{
+
+    display: flex;
+    text-align: center;
+justify-content: center;
+align-items: center;
+    gap: 2rem;
+padding:0 20%;
+   flex-wrap: wrap;
+   box-sizing: content-box;
+img{
+    width: 6rem;
+    filter: drop-shadow(0 0 0.75rem rgb(246, 166, 6));
+transform: rotate(10deg);
+}
+}
+
+.rotating-image {
+    animation: rotate 5s ease-out alternate backwards;
+  
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotateY(0deg);
+
+    }
+    100% {
+      transform: rotateY(-45deg); 
+
+    }
+  }
+
+
+
+
+
+
+/* .tech-skill {
     display: flex;
     justify-content: space-around;
     text-align: center;
@@ -68,4 +107,4 @@ h5{
 p{
     visibility: hidden;
 }
-}
+} */

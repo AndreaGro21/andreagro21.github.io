@@ -3,7 +3,7 @@ import { Route, Routes } from 'react-router-dom'
 import Main from "../Base_element/Main"
 import Error from "../../pages/Error"
 import AboutMe from "../../pages/AboutMe"
-import ServicesEtSkills from "../../pages/Services"
+import ServicesEtSkills from "../../pages/ServicesEtSkills"
 import Projects from "../../pages/Projects"
 import ProjectDetails from "../ProjectDetails"
 function MainRoute() {

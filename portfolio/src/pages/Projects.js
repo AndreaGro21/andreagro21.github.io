@@ -1,29 +1,29 @@
 import React, { useState } from "react";
 import ProjectCard from "../components/ProjectCard";
-import Kasa_cover from "../assets/img/Kasa_cover.jpg";
-import OhmyFood from "../assets/img/ohmyf.webp";
+import Kasa_cover from "../assets/img/kasa.webp";
+import OhmyFood from "../assets/img/ohmyfood.webp";
 import event77 from "../assets/img/77event.webp";
-import arrowL from "../assets/img/arrow_left.png"
-import arrowR from "../assets/img/arrow_right.png"
+import moon from "../assets/img/moon.png"
 function Projects() {
     const projectsData = [
         {
-            id:"",
+            id: "",
             projectTitle: "Kasa",
             projectDes: "Kasa has been in the private flat rental business for almost 10 years now. With more than 500 ads posted every day, Kasa is one of the leading flat rental companies in France.",
             source: Kasa_cover,
-
         },
         {
-            id:"",
-            projectTitle: "OhmyFood",
-            projectDes: "lorem",
+            id: "",
+            projectTitle: "OhMyFood",
+            projectDes: "Interesting project that allowed me to develop my UX-UI skills for this young start-up about to launch on the French market.",
             source: OhmyFood,
         },
         {
-            id:"",
+            id: "",
             projectTitle: "77-events",
-            projectDes: "lorem",
+            projectDes: `Really challenging for this debugging project,
+            a major events company found itself without a developer, 
+            I threw myself into this project with specific requirements and little time available.`,
             source: event77,
         },
     ];
@@ -43,14 +43,18 @@ function Projects() {
         <article>
             <h2>Projects</h2>
             <div className="projects-container">
-                <button onClick={prevProject}><img src={arrowL} alt="arrow-left"></img></button>
+                <button onClick={prevProject}>
+                    <img className="arrow-left" src={moon} alt="arrow-left"></img>
+                </button>
                 <ProjectCard
-                    id= {projectsData[currentProjectIndex].projectTitle}
+                    id={projectsData[currentProjectIndex].projectTitle}
                     projectTitle={projectsData[currentProjectIndex].projectTitle}
                     projectDes={projectsData[currentProjectIndex].projectDes}
                     source={projectsData[currentProjectIndex].source}
                 />
-                <button onClick={nextProject}><img src={arrowR} alt="arrow-right"></img></button>
+                <button onClick={nextProject}>
+                    <img className="arrow-right" src={moon} alt="arrow-right"></img>
+                </button>
             </div>
         </article>
     );

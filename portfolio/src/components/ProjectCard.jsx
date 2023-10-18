@@ -8,13 +8,13 @@ function ProjectCard({ projectTitle, projectDes, source, id }) {
                 to={`/projects/${id}`}
                 key={id}
                 className="prj-card_container">
-                <img src={source} alt={projectTitle} />
-                <div>
-                    <div>Description: </div>   {projectDes}
-                </div>
                 <h4>
-                    <span>Title: </span>{projectTitle}
+                    {projectTitle}
                 </h4>
+                <img src={source} alt={projectTitle} />
+                <div className='desc-text'>
+                    {projectDes}
+                </div>
             </Link >
         </>
     )

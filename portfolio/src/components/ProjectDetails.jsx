@@ -1,12 +1,17 @@
+import { Link } from "react-router-dom"
+
 function ProjectDetails({ projectTitle,source, }) {
+
+
 
     return (
        
         <div>
-            <h4><span>Title: </span>{projectTitle}</h4>
-             <img src={source} alt={projectTitle} />
-            <div>Stack:</div>
-            </div>
+            <p>client:</p>
+            <p>What I've done:</p>
+            <div>The stuck</div>
+<Link   to={`/projects`}>Go back to Projects</Link>
+        </div>
         
     )
 }

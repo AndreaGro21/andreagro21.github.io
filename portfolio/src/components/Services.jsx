@@ -1,10 +1,11 @@
 import ServiceCard from "./ServiceCard"
+import TekSkills from "./Tekskills";
 function Services (){
 const titleWebDev = `I can design and develop bespoke software to address your specific requirements, whether it's a web, mobile, or desktop application. I'm here to transform your ideas into high-quality code.`;
 const titlePerf = 
 "If you have an existing application that's sluggish or inefficient, I can optimize it to enhance performance and user satisfaction. Every millisecond counts, and swift loading is crucial.";
 const titleSec = "Data security is paramount. I can assist you in safeguarding sensitive data and implementing top-notch cybersecurity practices to prevent breaches. " 
-const titleGreen = `My support doesn't stop with project completion. I provide ongoing technical support, maintenance, and updates to keep your software up-to-date. Moreover, i'm committed to "green code" practices, optimizing performance while reducing environmental impact.`;
+const titleGreen = `"I don't just stop after the project is done. I provide ongoing tech support, maintenance, and updates to keep your software up to date. Plus, I'm all about 'green code' practices, making sure your software runs efficiently and is environmentally friendly."`;
     return(
         <article>
         <h2 id="my-service">What I Can Do For You:</h2>
@@ -27,7 +28,10 @@ const titleGreen = `My support doesn't stop with project completion. I provide o
         textDescription = {titleSec}
         />
         </div>
+        <h2 id="my-stack">My stack</h2>
+        <TekSkills />
         </article>
+
     )
 }
 

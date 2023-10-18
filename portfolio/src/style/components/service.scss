@@ -1,20 +1,23 @@
 .service-container {
     display: flex;
-    gap: 50px;
-    justify-content: space-around;
+    gap: 30px;
+
+    margin-top: 1rem;
 }
+
 .service-card_container {
+    width: 25%;
     position: relative;
     display: flex;
     flex-direction: column;
-    width: 25%;
     align-items: center;
+    justify-content:space-between;
+    gap: 20px;
     text-align: center;
+    padding: 20px;
     --border-width: 1px;
-    background: rgb(0, 0, 0);
-
-    border-radius: 10px;
-
+ /*    background: rgb(0, 0, 0); */
+    border-radius: 15px;
     &::after {
         position: absolute;
         content: "";
@@ -31,22 +34,22 @@
                 hsl(125, 85%, 66%));
         background-size: 600% 400%;
         background-position: 0 50%;
-        border-radius: calc(2 * 30px);
+        border-radius: calc(1 * 20px);
         animation: moveGradient 15s linear infinite;
     }
 
     p {
-        padding: 0 10%;
-        transition: all 1s ease;
         margin: 0;
-   /*      &:hover{
-            scale: 1.1;
-            font-size: 1.1rem;
-            transition: all 1s ease;
-        } */
+        display: flex; 
+        flex: 0 ;
+        align-self: center;
     }
 
     h3 {
+        text-align: center;
+
+        margin-bottom: 0;
+        position: relative;
         background: -webkit-linear-gradient(60deg,
                 hsl(120, 9%, 96%),
                 hsl(44, 85%, 66%),
@@ -58,11 +61,6 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         animation: moveGradient 15s linear infinite;
-        display: inline-block;
-        margin-bottom: 0;
-        position: relative;
-        top: -65px;
-
     }
 }
 
