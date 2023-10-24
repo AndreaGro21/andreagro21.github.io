@@ -10,12 +10,18 @@ function Projects() {
             id: "",
             projectTitle: "Kasa",
             projectDes: "Kasa has been in the private flat rental business for almost 10 years now. With more than 500 ads posted every day, Kasa is one of the leading flat rental companies in France.",
+            stack: "",
+            objective:"",
             source: Kasa_cover,
+
+
         },
         {
             id: "",
             projectTitle: "OhMyFood",
             projectDes: "Interesting project that allowed me to develop my UX-UI skills for this young start-up about to launch on the French market.",
+            stack: "",
+            objective:"",
             source: OhmyFood,
         },
         {
@@ -24,11 +30,13 @@ function Projects() {
             projectDes: `Really challenging for this debugging project,
             a major events company found itself without a developer, 
             I threw myself into this project with specific requirements and little time available.`,
+            stack: "",
+            objective:"",
             source: event77,
+
         },
     ];
     const [currentProjectIndex, setCurrentProjectIndex] = useState(0);
-    console.log(currentProjectIndex)
     const nextProject = () => {
         setCurrentProjectIndex((prevIndex) =>
             prevIndex === projectsData.length - 1 ? 0 : prevIndex + 1
@@ -40,9 +48,9 @@ function Projects() {
         );
     };
     return (
-        <article>
-            <h2>Projects</h2>
-            <div className="projects-container">
+        <main>
+            <h1>Projects</h1>
+            <article className="projects-container">
                 <button onClick={prevProject}>
                     <img className="arrow-left" src={moon} alt="arrow-left"></img>
                 </button>
@@ -55,8 +63,8 @@ function Projects() {
                 <button onClick={nextProject}>
                     <img className="arrow-right" src={moon} alt="arrow-right"></img>
                 </button>
-            </div>
-        </article>
+            </article>
+        </main>
     );
 }
 

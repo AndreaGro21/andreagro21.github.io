@@ -1,33 +1,56 @@
 .aboutme-container {
    display: flex;
-   align-items:flex-start;
-   width: 100%;
+   align-items: flex-start;
+   width: 110%;
    height: 100vh;
    padding-top: 70px;
-
-   img {
+   background: url("../../assets/img/BackGround/sun.png");
+   background-position: 125% 85%;
+   background-repeat: no-repeat;
+   background-size: 50%;
+   background-color: contrast(200%);
+   .my-photo {
+     margin-top: 20px;
       width: 20%;
-      height: 60%;
       padding: 20px 40px;
-      border-radius: 75px ;
+      border-radius: 150%;
    }
-
-.presentation-container{
-   display: flex;
-   flex-direction: column;
-   padding: 20px 40px;
-   align-items: flex-start;
-   text-align: left;
-   justify-content: flex-start;
-   
+   .presentation-container {
+      display: flex;
+      flex-direction: column;
+      padding: 20px 40px;
+      align-items: flex-start;
+      text-align: left;
+      justify-content: flex-start;
+      width: 40%;
+   }
+   h1 {
+      font-size: 2.4rem;
+      padding-top: 10px;
+      text-align: left;
+      
+   }
+   p {
+      font-size: 1.1rem;
+      line-height: 2.2;
+   }
 }
-h2{
-   font-size: 1.4rem;
-}
- p{
-   font-size: 1.1rem;
-   line-height: 2.2;
- }
 
+.earth {
+   width: 20%;
+   position: absolute;
+   z-index: -1;
+   top: 75%;
+   right: 85%;
+
+}
+
+.aboutme-presentation {
+   strong {
+      text-shadow: rgba(55, 255, 0, 0.745) 1px 0 10px;
+   }
+}
+.myCv{
+ align-self: center;
 
 }

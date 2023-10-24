@@ -1,11 +1,14 @@
 @import "../src/style/Base_element/footer.scss";
 @import "../src/style/Base_element/nav.scss";
+@import "../src/style/pages/service.scss";
+@import "../src/style/pages/projects.scss";
+@import "../src/style/pages/aboutme.scss";
 @import "../src/style/components/video.scss";
 @import "../src/style/components/introduction.scss";
-@import "../src/style/components/service.scss";
-@import "../src/style/components/projects.scss";
 @import "../src/style/components/skills.scss";
-@import "../src/style/pages/aboutme.scss";
+@import "../src/style/components/logoContact.scss";
+@import '../src/style/components/MouseTrail.scss'; 
+@import '../src/style/components/ProjectDetails.scss'; 
 html{
     scroll-behavior:smooth;
     overflow-x: hidden;
@@ -33,7 +36,7 @@ p,div{
     font-size: 1.2rem;
 }
 
-h2{
+h1,h2{
     text-shadow: #FC0 1px 0 10px;
     font-size: 3rem;
     text-align: center;
@@ -46,5 +49,9 @@ h4{
     font-size: 2.5rem;
     
 }
+
+
+
+
 
 

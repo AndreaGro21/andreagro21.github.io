@@ -1,0 +1,105 @@
+.prj-details_container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10%;
+    text-align: center;
+    background: url("../../assets/img/BackGround/galaxy.jpg");
+    background-position:50% -10000%;
+    background-size: 80%;
+    object-fit: cover;
+
+    img {
+        width: 70%;
+        height: 20rem;
+        object-fit: cover;
+        border-radius: 50%;
+        box-shadow: 
+        -3px -3px 7px 1px #8E5CFF, 
+        1px -2px 7px 2px #80C7FF, 
+        6px 5px 7px 3px #E488FF, 
+        2px 2px 7px 2px rgba(0, 0, 0, 0);
+    }
+
+    h2 {
+        font-size: 1.6rem;
+        padding: 1% 0;
+        color: transparent;
+        background: #ffffff;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        text-shadow: 0px 3px 3px rgba(172, 172, 172, 0.5);
+
+        span {
+            font-size: 2rem;
+            text-shadow: 0px 3px 3px rgba(247, 210, 47, 0.27);
+        }
+    }
+
+    p {
+        font-size: 1.4rem;
+        width: 50%;
+
+    }
+
+    .li-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        a{
+            font-size: 1rem;
+            margin-top: 10%;
+            padding: 10px 20px;
+            border-radius: 30px;
+            text-decoration: none;
+            color: #ffff;
+            box-shadow: 5px 3px 35px #8E5CFF, 1px 1px 2px rgba(206, 89, 55, 0);
+            transition: all 1s ease;
+            opacity: 1;
+        }
+        .link-a1:hover {
+            padding: 10px 40px;
+            background: linear-gradient(130deg, rgba(255, 255, 255, 0) 45%,rgba(175, 2, 255, 0.499) 50%, rgba(255, 255, 255, 0) 55%);
+            background-size: 500%;
+            background-position: right;
+            color: #c10ff1e2;
+            border: 1px solid rgba(175, 2, 255, 0.499);
+            animation: moveBtn 1.5s linear infinite;
+            font-size: 1.2rem;
+            transition: all 1s ease;
+        }
+       
+        
+    }
+}
+.link-a2{
+
+    &:hover{
+        padding: 10px 40px;
+        background: linear-gradient(130deg,
+         rgba(255, 255, 255, 0) 45%,
+          rgba(175, 2, 255, 0.499) 50%,
+           rgba(255, 255, 255, 0) 55%);
+        background-size: 500%;
+        background-position: left;
+        color: #d2f9cde2;
+        border: 1px solid #8E5CFF;
+        animation: moveBtn2 1.5s linear infinite;
+        font-size: 1.2rem;
+        transition: all 1s ease;
+    }
+}
+@keyframes moveBtn {
+    to {
+        transition: all .4s infinite;
+        background-position: left;
+    }
+}
+@keyframes moveBtn2 {
+    to {
+        transition: all .4s infinite;
+        background-position: right;
+    }
+}

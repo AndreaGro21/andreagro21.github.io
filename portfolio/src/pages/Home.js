@@ -5,7 +5,9 @@ function Home() {
     return (
         <>
             <Nav />
+            <main>
             <Main />
+            </main>
         </>
     )
 }

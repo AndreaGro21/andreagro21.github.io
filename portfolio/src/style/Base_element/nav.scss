@@ -1,4 +1,4 @@
-nav {
+header {
     display: flex;
     justify-content: space-between;
     padding: 10px 30px;
@@ -32,7 +32,7 @@ nav {
             color: white;
             text-decoration: none;
             padding: 0 5px;
-transition: all 2s ;
+            transition: all 2s;
             &:hover {
                 text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #00FF00 0px 0px 20px, #00FF00 0px 0px 30px, #FF2D95 0px 0px 40px, #00FF00 0px 0px 50px, #FF2D95 0px 0px 75px;
             }
@@ -50,7 +50,8 @@ transition: all 2s ;
     bottom: 10px;
     position: relative;
     letter-spacing: -5.5px;
-    transition: all 2s ;
+    transition: all 2s;
+
     &:hover {
         text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #00FF00 0px 0px 20px, #00FF00 0px 0px 30px, #FF2D95 0px 0px 40px, #00FF00 0px 0px 50px, #FF2D95 0px 0px 75px;
     }

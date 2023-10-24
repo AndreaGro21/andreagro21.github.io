@@ -2,14 +2,14 @@ import React from 'react';
 import { Link } from 'react-router-dom'
 function Nav() {
     return (
-        <nav className='nav-container'>
+        <header className='nav-container'>
             <Link className="logo" to="/"> Ag</Link>
-            <div className='nav-menu'>
-                <Link to="/projects" className="link">Projects</Link>
-                <Link to="/services" className="link">Services</Link>
+            <nav className='nav-menu'>
                 <Link to="/aboutMe" className="link">About</Link>
-            </div>
-        </nav>
+                <Link to="/services" className="link">Services</Link>
+                <Link to="/projects" className="link">Projects</Link>
+            </nav>
+        </header>
     )
 }
 export default Nav

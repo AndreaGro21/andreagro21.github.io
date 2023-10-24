@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-function ProjectCard({ projectTitle, projectDes, source, id }) {
+function ProjectCard({ projectTitle, projectDes, source, id , idLink}) {
 
     return (
         <>
@@ -8,12 +8,12 @@ function ProjectCard({ projectTitle, projectDes, source, id }) {
                 to={`/projects/${id}`}
                 key={id}
                 className="prj-card_container">
-                <h4>
+                <h2 className='prj-title'>
                     {projectTitle}
-                </h4>
+                </h2>
                 <img src={source} alt={projectTitle} />
                 <div className='desc-text'>
-                    {projectDes}
+                Click on the image for additional information
                 </div>
             </Link >
         </>

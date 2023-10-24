@@ -3,7 +3,7 @@ import { Route, Routes } from 'react-router-dom'
 import Main from "../Base_element/Main"
 import Error from "../../pages/Error"
 import AboutMe from "../../pages/AboutMe"
-import ServicesEtSkills from "../../pages/ServicesEtSkills"
+import Services from "../../pages/Services"
 import Projects from "../../pages/Projects"
 import ProjectDetails from "../ProjectDetails"
 function MainRoute() {
@@ -12,9 +12,9 @@ function MainRoute() {
             <Route path="/" element={<Main />} />
             <Route path="*" element={<Error />} />
             <Route path="/aboutMe" element={<AboutMe />} />
-            <Route path="/services" element={<ServicesEtSkills />} />
+            <Route path="/services" element={<Services />} />
             <Route path="/projects" element={<Projects />} />
-            <Route path="/projects/:Id" element={<ProjectDetails />} />
+            <Route path="/projects/:id" element={<ProjectDetails />} />
         </Routes>
     )
 }

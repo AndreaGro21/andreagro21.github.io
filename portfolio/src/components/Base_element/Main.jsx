@@ -1,10 +1,10 @@
 import React from 'react'
-import Video from '../Video'
+import Landing from '../Landing'
 
 function Main() {
     return (
         <>
-            <Video />
+            <Landing />
         </>
     )
 };
