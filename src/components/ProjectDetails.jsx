@@ -53,7 +53,7 @@ function ProjectDetails() {
             <img src={project.source} alt={project.projectTitle} />
             <p>{project.projectDes}</p>
             <div className="li-container">
-            <a className="link-a1" href={project.link}>GitHub</a>
+            <a className="link-a1"  href={project.link} target="_blank" rel="noreferrer">GitHub</a>
             <Link className="link-a2" to="/projects">Go back to Projects</Link>
             </div>
         </article>
