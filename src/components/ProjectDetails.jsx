@@ -13,8 +13,8 @@ const projectsData = [
         projectTitle: "Kasa",
         projectDes:
             "Kasa has been in the private flat rental business for almost 10 years now. With more than 500 ads posted every day, Kasa is one of the leading flat rental companies in France.",
-        
-            stack:` #REACT #JAVASCRIPT #SASS #HTML #FIGMA #GIT `,
+
+        stack: ` #REACT #JAVASCRIPT #SASS #HTML #FIGMA #GIT `,
         source: Kasa_cover,
         link: 'https://github.com/AndreaGro21/project_8_kasa'
     },
@@ -53,8 +53,8 @@ function ProjectDetails() {
             <img src={project.source} alt={project.projectTitle} />
             <p>{project.projectDes}</p>
             <div className="li-container">
-            <a className="link-a1"  href={project.link} target="_blank" rel="noreferrer">GitHub</a>
-            <Link className="link-a2" to="/projects">Go back to Projects</Link>
+                <a className="link-a1" href={project.link} target="_blank" rel="noreferrer">GitHub</a>
+                <Link className="link-a2" to="/projects">Go back to Projects</Link>
             </div>
         </article>
     );
