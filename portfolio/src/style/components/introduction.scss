@@ -1,8 +1,6 @@
-.intro-container{
-
+.intro-container {
   padding: 0 5%;
 }
-
 
 .myName {
   position: absolute;
@@ -13,13 +11,15 @@
   font-size: 7rem;
   font-family: "cinzel", sans-serif;
   opacity: 0;
-  span{
+
+  span {
     animation: myname 4s ease-in-out forwards;
     opacity: 0.5;
     font-size: 10rem;
   }
 }
-.myJob{
+
+.myJob {
   animation: last 3s ease-out 3s forwards;
   opacity: 0;
   position: absolute;
@@ -28,54 +28,107 @@
   color: rgb(194, 242, 169);
   font-size: 6rem;
   font-family: "cinzel", sans-serif;
+}
 
+.presentation {
+  position: absolute;
+  opacity: 0;
+  bottom: 25%;
+  left: 30%;
+  filter: drop-shadow(-30px 0px 10px #08f45ffd);
+  animation:
+    prese 1.5s forwards 6s alternate,
+    rotateinfo 10s  10s infinite;
 }
 
 @keyframes myname {
   from {
-      color: #33cd089c;
-      opacity: 0;
-      scale: 0;
-      transform: translateX(-220%);
+    color: #33cd089c;
+    opacity: 0;
+    scale: 0;
+    transform: translateX(-220%);
   }
 
   to {
-      color: #FFF;
-      transform: translateX(0);
-      opacity: 1;
-      scale: 1;
+    color: #FFF;
+    transform: translateX(0);
+    opacity: 1;
+    scale: 1;
   }
 }
-
-@keyframes secondView {
-  from {
-      color: #33cd089c;
-      opacity: 0;
-      scale: 0;
-  }
-
-  to {
-      color: #FFF;
-      opacity: 1;
-      scale: 1;
-  }
-}
-
 
 @keyframes last {
   from {
-      color: #33cd089c;
-      opacity: 0;
-      scale: 0;
-      transform: translateX(-520%);
-      text-shadow: 0;
+    color: #33cd089c;
+    opacity: 0;
+    scale: 0;
+    transform: translateX(-520%);
+    text-shadow: 0;
   }
 
   to {
-      color: #FFF;
-      transform: translateX(0);
-      opacity: 1;
-      scale: 1;
-      text-shadow: 5px 3px 75px #39f006, 1px 1px 2px rgba(206, 89, 55, 0);
+    color: #FFF;
+    transform: translateX(0);
+    opacity: 1;
+    scale: 1;
+    text-shadow: 5px 3px 75px #39f006, 1px 1px 2px rgba(206, 89, 55, 0);
+  }
+}
+
+@keyframes prese {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+@keyframes rotateinfo {
+  0% {
+    transform: translateX(0%);
+    scale: 1;
+  }
+
+  10% {
+    transform: translateX(300%);
+    scale: .6;
+  }
+
+  30% {
+    scale: .4;
+  }
+
+  40% {
+    transform: translateX(400%);
+    scale: .1;
+    opacity: 0;
+  }
+
+  50% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  60% {
+    opacity: .2;
+  }
+
+  70% {
+    opacity: .4;
+  }
+
+  80% {
+    opacity: .6;
+  }
+  90% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
   }
 }
