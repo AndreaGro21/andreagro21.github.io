@@ -1,7 +1,7 @@
 .aboutme-container {
    display: flex;
    align-items: flex-start;
-   width: 110%;
+   width: 100%;
    height: 100vh;
    padding-top: 70px;
    background: url("../../assets/img/BackGround/sun.png");
@@ -21,8 +21,8 @@
       padding: 20px 40px;
       align-items: flex-start;
       text-align: left;
-      justify-content: flex-start;
-      width: 40%;
+      width: 90%;
+      
    }
    h1 {
       font-size: 2.4rem;
@@ -42,15 +42,5 @@
    z-index: -1;
    top: 75%;
    right: 85%;
-
-}
-
-.aboutme-presentation {
-   strong {
-      text-shadow: rgba(55, 255, 0, 0.745) 1px 0 10px;
-   }
-}
-.myCv{
- align-self: center;
 
 }

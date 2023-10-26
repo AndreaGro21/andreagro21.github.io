@@ -8,7 +8,6 @@ header {
     box-sizing: border-box;
     z-index: 2;
     background: none;
-
     &:hover {
         background: linear-gradient(130deg, rgba(255, 255, 255, 0) 45%, rgba(44, 255, 2, 0.254) 50%, rgba(255, 255, 255, 0) 55%);
         background-size: 500%;
@@ -18,8 +17,6 @@ header {
         border: none;
         transition: all 5s ease;
     }
-
-
 
     .nav-menu {
         width: 30%;
@@ -33,6 +30,7 @@ header {
             text-decoration: none;
             padding: 0 5px;
             transition: all 2s;
+
             &:hover {
                 text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #00FF00 0px 0px 20px, #00FF00 0px 0px 30px, #FF2D95 0px 0px 40px, #00FF00 0px 0px 50px, #FF2D95 0px 0px 75px;
             }

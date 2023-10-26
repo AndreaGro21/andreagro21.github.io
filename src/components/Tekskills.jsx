@@ -5,7 +5,7 @@ export default function TekSkills() {
     <article className="tec-skills">
       {imageList.map((image, index) => (
         <div key={index} className="rotating-image">
-          <img key={index} src={image} alt={`langage-${index}`} />
+          <img key={index} src={image} alt={`langage-${image}`} />
         </div>
       ))}
     </article>

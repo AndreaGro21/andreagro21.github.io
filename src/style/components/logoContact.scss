@@ -1,49 +1,29 @@
 .logo-contact_container {
     display: flex;
     flex-direction: row;
-    width: 100%;
-    box-sizing: content-box;
-    justify-content: space-around;
-    text-decoration: none;
-    flex: 1 1 0;
+    contain: content;
+    justify-content: flex-start;
 
-    img {
-        width: 50%;
-        box-sizing: border-box;
-        flex: 1 1 0px;
+    button {
+        padding: 0 !important;
+        background: none;
+        flex-basis: 20%;
+        border: none;
+    }
+
+    a {
+        flex-basis: 20%;
+        text-align: center;
 
         &:hover {
             animation: jelly 2s infinite;
             transform-origin: 50% 100%;
-
         }
     }
-    .barbie {
-        width: 48%;
-        ;
-    }
 
-    .toosmall {
-        flex: 1 1 0px;
-        width: 90%;
+    img {
 
-    }
-
-    p {
-        word-wrap: break-all;
-        width: 200px;
-        bottom: 20%;
-        text-align: left;
-        animation: fadeIn 5s;
-        animation-fill-mode: forwards;
-        opacity: 0;
-        color: red;
-        text-decoration: none;
-    }
-
-    .ok {
-        color: rgb(2, 230, 2);
-        animation: fadeIn 9s;
+        width: 50%;
     }
 }
 
@@ -71,20 +51,23 @@
 
 @keyframes jelly {
 
-    0%,
-    100% {
+    0% {
         transform: scaleY(1) skewX(0deg);
     }
 
     25% {
-        transform: scaleY(0.8) skewX(10deg);
+        transform: scaleY(0.8) skewX(20deg);
     }
 
     50% {
-        transform: scaleY(1.2) skewX(-10deg);
+        transform: scaleY(1.2) skewX(10deg);
     }
 
     75% {
-        transform: scaleY(0.9) skewX(5deg);
+        transform: scaleY(0.9) skewX(-20deg);
+    }
+
+    100% {
+        transform: scaleY(1) skewX(0deg);
     }
 }

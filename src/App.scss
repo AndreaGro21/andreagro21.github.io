@@ -8,12 +8,16 @@
 @import "../src/style/components/skills.scss";
 @import "../src/style/components/logoContact.scss";
 @import '../src/style/components/MouseTrail.scss'; 
-@import '../src/style/components/ProjectDetails.scss'; 
+@import '../src/style/components/ProjectDetails.scss';
+@import '../src/style/media.scss'; 
+
+
+
 html{
-    scroll-behavior:smooth;
     overflow-x: hidden;
     overflow-y: hidden;
     height: 100vh;
+    width: 104%;
 
 }
 body{
