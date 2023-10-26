@@ -1,24 +1,17 @@
+import React from 'react';
 
-import React, { useState } from 'react';
-
-export default function ServiceCard({ title, textDescription }) {
-  const isDesktop = window.innerWidth > 840;
-  const [isDescriptionOpen, setIsDescriptionOpen] = useState(false);
-
-  const toggleDescription = () => {
-    setIsDescriptionOpen(!isDescriptionOpen);
-  }
+export default function ServiceCard({ title, textDescription, isOpen, toggleParagraph, isDesktop }) {
 
   return (
     <article className="service-card_container">
-      {!isDesktop ? (
-        <button onClick={toggleDescription}>
+      {isDesktop ? (
+        <h3 onClick={toggleParagraph}>{title}</h3>
+      ) : (
+        <button onClick={toggleParagraph}>
           <h3>{title}</h3>
         </button>
-      ) : (
-        <h3 onClick={toggleDescription}>{title}</h3>
       )}
-      {isDescriptionOpen && (
+      {isOpen && (
         <p className='textDesc'>{textDescription}</p>
       )}
     </article>
