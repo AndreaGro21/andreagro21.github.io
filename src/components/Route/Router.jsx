@@ -13,7 +13,7 @@ function MainRoute() {
     return (
         <Routes>
 
-            <Route path="/" element={<Main />} />
+            <Route path="/myportfolio" element={<Main />} />
             <Route path="*" element={<Error />} />
             <Route path="/aboutMe" element={<AboutMe />} />
             <Route path="/services" element={<Services />} />
