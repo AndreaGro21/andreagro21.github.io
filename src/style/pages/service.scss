@@ -25,13 +25,31 @@
     text-align: center;
     padding: 20px;
 
-    p {
+    .textDesc {
         margin: 0;
-        display: flex;
+        display: block;
         flex: 0;
         align-self: center;
     }
+    .notvisible{
+        display: none;
 
+    }
+button{
+    background: none;
+    border-radius: 10px;
+    background: -webkit-linear-gradient(60deg,
+    hsl(120, 9%, 96%),
+    hsl(44, 85%, 66%),
+    hsl(0, 100%, 100%),
+    hsl(134, 85%, 66%),
+    hsl(125, 85%, 66%));
+background-size: 500% auto;
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+animation: moveGradient 15s linear infinite;
+}
     h3 {
         text-align: center;
         margin-bottom: 0;

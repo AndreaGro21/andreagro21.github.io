@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 
-
 const MouseTrail = () => {
   const [trail, setTrail] = useState([]);
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
   const addTrail = (x, y) => {
     setTrail([...trail, { x, y }]);
@@ -15,20 +15,31 @@ const MouseTrail = () => {
 
     window.addEventListener('mousemove', onMouseMove);
 
+    const handleResize = () => {
+      setScreenWidth(window.innerWidth);
+    };
+
+    window.addEventListener('resize', handleResize);
+
     return () => {
       window.removeEventListener('mousemove', onMouseMove);
+      window.removeEventListener('resize', handleResize);
     };
-  }, );
+  });
 
   return (
     <div>
-      {trail.map((pos, index) => (
-        <div
-          className="trail" // Usa la classe CSS definita nel file CSS
-          key={index}
-          style={{ left: `${pos.x}px`, top: `${pos.y}px` }}
-        />
-      ))}
+      {screenWidth > 800 ? (
+        trail.map((pos, index) => (
+          <div
+            className="trail"
+            key={index}
+            style={{ left: `${pos.x}px`, top: `${pos.y}px` }}
+          />
+        ))
+      ) : (
+        <div className="normal-mouse" />
+      )}
     </div>
   );
 };

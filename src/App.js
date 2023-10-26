@@ -27,7 +27,7 @@ function App() {
           }}
           innerStyle={{
             border: 'none',
-            backgroundColor: 'white',
+            backgroundColor: 'red',
             backgroundSize: '20% 20%',
           }}
         />
