@@ -1,6 +1,17 @@
+@media screen and (max-width:839px) {
+    h1 {
+        font-size: 2rem;
+        padding-top: 10px;
+        text-align: center;
+    }
+
+}
+
+
 //NAV
 @media screen and (min-width:250px) and (max-width:839px) {
     header {
+        height: 55px;
         width: 95%;
         max-width: 100vh;
         padding-right: 50px;
@@ -87,28 +98,26 @@
         .presentation-container {
             width: 100%;
             box-sizing: border-box;
-            .curious{
+
+            .curious {
                 font-size: .8rem;
             }
-            .logo-contact_container{
+
+            .logo-contact_container {
                 transform: translateX(-1.1rem);
 
                 justify-content: space-between;
-                a  , button{
+
+                a,
+                button {
                     width: 100%;
-                    img{
+
+                    img {
                         width: 80%;
                     }
                 }
             }
         }
-
-        h1 {
-            font-size: 2rem;
-            padding-top: 10px;
-            text-align: center;
-        }
-
         p {
             margin: 2px 0;
             font-size: 1rem;
@@ -120,9 +129,6 @@
             padding: 0 !important;
             box-shadow: none;
         }
-
-    
-
     }
 }
 
@@ -143,11 +149,6 @@
         width: 90%;
         background-size: 100%;
         height: 100%;
-
-        h1 {
-            font-size: 2rem;
-            padding: 70px 0 0 0;
-        }
 
         h3 {
             font-size: 1.3rem;
@@ -191,11 +192,6 @@
             padding: 0;
         }
 
-        h1 {
-            font-size: 2rem;
-            padding: 70px 0 0 0;
-        }
-
         h3 {
             font-size: 1.4rem;
             width: 100%;
@@ -233,7 +229,7 @@
 
         h1 {
             font-size: 2.2rem;
-            padding-bottom: 0;
+            padding-top: 50px;
         }
     }
 
@@ -241,12 +237,15 @@
         position: absolute;
         overflow: visible;
         padding: 10px;
-        box-sizing: border-box;
 
         a {
             width: 200%;
-            position: relative;
-            z-index: -1;
+            z-index: 1;
+
+            img {
+                position: relative;
+                z-index: -1;
+            }
 
             h2 {
                 font-size: 1.6rem;
@@ -254,7 +253,8 @@
             }
 
             .desc-text {
-                display: none;
+                display: block;
+                font-size: .6rem;
             }
         }
 
@@ -263,6 +263,7 @@
             width: 20px;
             height: 602px;
             padding: 0;
+            z-index: 2;
 
             .arrow-left,
             .arrow-right {
