@@ -11,7 +11,7 @@ function Projects() {
             projectTitle: "Kasa",
             projectDes: "Kasa has been in the private flat rental business for almost 10 years now. With more than 500 ads posted every day, Kasa is one of the leading flat rental companies in France.",
             stack: "",
-            objective:"",
+            objective: "",
             source: Kasa_cover,
 
 
@@ -21,7 +21,7 @@ function Projects() {
             projectTitle: "OhMyFood",
             projectDes: "Interesting project that allowed me to develop my UX-UI skills for this young start-up about to launch on the French market.",
             stack: "",
-            objective:"",
+            objective: "",
             source: OhmyFood,
         },
         {
@@ -31,7 +31,7 @@ function Projects() {
             a major events company found itself without a developer, 
             I threw myself into this project with specific requirements and little time available.`,
             stack: "",
-            objective:"",
+            objective: "",
             source: event77,
 
         },

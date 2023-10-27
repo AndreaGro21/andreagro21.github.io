@@ -39,7 +39,7 @@ function AboutMe() {
             Can't wait to develop new projects whit you, and continue to grow professionally and personally!
           </strong>
         </p>
-        <p>
+        <p className="curious">
           Curious? <br></br>You can download my cV here,
           Look at my Linkedln or Github
           or continue surfing my site!

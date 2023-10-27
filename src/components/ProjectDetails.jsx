@@ -3,17 +3,12 @@ import { Link, useParams } from "react-router-dom";
 import Kasa_cover from "../assets/img/kasa.webp";
 import OhmyFood from "../assets/img/ohmyfood.webp";
 import event77 from "../assets/img/77event.webp";
-
-
-
-
 const projectsData = [
     {
         id: "Kasa",
         projectTitle: "Kasa",
         projectDes:
             "Kasa has been in the private flat rental business for almost 10 years now. With more than 500 ads posted every day, Kasa is one of the leading flat rental companies in France.",
-
         stack: ` #REACT #JAVASCRIPT #SASS #HTML #FIGMA #GIT `,
         source: Kasa_cover,
         link: 'https://github.com/AndreaGro21/project_8_kasa'

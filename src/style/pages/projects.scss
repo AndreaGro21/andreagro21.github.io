@@ -27,6 +27,7 @@ main{
             }
         }
         .arrow-right{
+         
             transform: rotate(330deg);
             filter: drop-shadow(0 0 0.75rem rgb(251, 249, 249));
             &:hover {

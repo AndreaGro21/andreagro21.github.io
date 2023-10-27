@@ -4,16 +4,15 @@ import AnimatedCursor from "react-animated-cursor"
 import Mouse from './components/Mouse.jsx';
 import MainRoute from './components/Route/Router';
 import Nav from "./components/Base_element/Nav";
-
 function App() {
-
+  const isDesktop = window.innerWidth > 840;
   return (
     <div className="App">
       <Router>
         <Nav />
         <MainRoute />
         <Mouse />
-        <AnimatedCursor
+        {isDesktop ? <AnimatedCursor
           className="cursor-image"
           innerSize={10}
           outerSize={10}
@@ -27,10 +26,10 @@ function App() {
           }}
           innerStyle={{
             border: 'none',
-            backgroundColor: 'red',
+            backgroundColor: 'white',
             backgroundSize: '20% 20%',
           }}
-        />
+        /> : null}
       </Router>
     </div>
   );
@@ -44,30 +43,38 @@ PROBLEMI:
 -about page - const non usata,
 -aboutme/link - padding e posizione logolink
 -skills img- come metto il nome del file nell'alt?
+bottone del mouse in mobile
+il cazzo di luna destra perche si sposta?
 */
 
 
 /* TO ADD:
-about me;
-bottone che manda ad un altra pagina???????
-soft-skills;?
-contact (con opione iserimento azienda)
-footer?
+bottone che manda ad un altra pagina da mobile
+soluzione per lo scroll delle pagine
+contact
+?footer
+^^^^^^^^^^^meta e altre merde
+*/
+
+/* TO MODIFY:
+img e png
+logo link piu grandi e curius piu piccolo
+project da fare responsive
+project  dettagli da fare responsive
+openclassroom evidenziato
+ */
+
+
+/* NEXT STUFF:
+
+
 */
 
 
-/*
-ALTRE AGGIUNTE:
-set di base dei colori
-*/
-//footer con radius btn che apre una nuovo form?
 
 
-/* video solo 2 size per il testo e magari un obreggiatura in piu per lo slogan */
 
 
-//devo far si che si mostri una sola volta tutti i titoli 
-//devo far si che il button sappia che dopo i primo deve restare in opacity 1
 
 
 //mention to the autor and site:

@@ -1,19 +1,21 @@
 import React from 'react';
 
-export default function ServiceCard({ title, textDescription, isOpen, toggleParagraph, isDesktop }) {
-
+export default function ServiceCard({ title, textDescription, isOpen, toggleParagraph }) {
+    const isDesktop = window.innerWidth > 840;
   return (
     <article className="service-card_container">
-      {isDesktop ? (
-        <h3 onClick={toggleParagraph}>{title}</h3>
-      ) : (
+
+      {isDesktop ? (<h3 >{title}</h3>) : 
+      (
         <button onClick={toggleParagraph}>
           <h3>{title}</h3>
         </button>
       )}
-      {isOpen && (
+
+
+      {isOpen || isDesktop ?  (
         <p className='textDesc'>{textDescription}</p>
-      )}
+      ) : null}
     </article>
   );
 }
