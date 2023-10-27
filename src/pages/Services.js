@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import ServiceCard from "../components/ServiceCard"
 import TekSkills from "../components/Tekskills";
-
+import BtnMobile from '../components/Base_element/external_element/BtnMobile';
 function Services() {
   const [openParagraphIndex, setOpenParagraphIndex] = useState(-1);
   const titleWebDev = `I can design and develop bespoke software to address your specific requirements, whether it's a web, mobile, or desktop application. I'm here to transform your ideas into high-quality code.`;
@@ -19,7 +19,7 @@ function Services() {
       setOpenParagraphIndex(index);
     }
   };
-
+  const isDesktop = window.innerWidth > 840;
   
   return (
     <main className="main-service">
@@ -54,6 +54,7 @@ function Services() {
       </div>
       <h2 id="my-stack">My stack</h2>
       <TekSkills />
+       {!isDesktop ? <BtnMobile /> : null}
     </main>
 
   )

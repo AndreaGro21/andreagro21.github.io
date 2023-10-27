@@ -4,6 +4,7 @@ import Kasa_cover from "../assets/img/kasa.webp";
 import OhmyFood from "../assets/img/ohmyfood.webp";
 import event77 from "../assets/img/77event.webp";
 import moon from "../assets/img/moon.webp"
+import BtnMobile from '../components/Base_element/external_element/BtnMobile';
 function Projects() {
     const projectsData = [
         {
@@ -47,6 +48,7 @@ function Projects() {
             prevIndex === 0 ? projectsData.length - 1 : prevIndex - 1
         );
     };
+    const isDesktop = window.innerWidth > 840;
     return (
         <main>
             <h1>Projects</h1>
@@ -64,6 +66,7 @@ function Projects() {
                     <img className="arrow-right" src={moon} alt="arrow-right" width="50" height="auto"></img>
                 </button>
             </article>
+            {!isDesktop ? <BtnMobile /> : null}
         </main>
     );
 }

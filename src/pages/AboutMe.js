@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react"
 import Myself from "../assets/img/io.webp"
 import earth from "../assets/img/BackGround/earth.webp"
 import Link from "../components/Link";
+import BtnMobile from '../components/Base_element/external_element/BtnMobile';
 function AboutMe() {
   const phrases = {
     english: 'Welcome to my website!',
@@ -11,6 +12,7 @@ function AboutMe() {
   };
   const languages = ['english', 'french', 'italian', 'spanish'];
   const [currentLanguage, setCurrentLanguage] = useState('');
+  console.log(currentLanguage)
   const [animatedText, setAnimatedText] = useState(phrases.english);
   useEffect(() => {
     let currentIndex = 0;
@@ -24,6 +26,8 @@ function AboutMe() {
       clearInterval(intervalId);
     };
   });
+  const isDesktop = window.innerWidth > 840;
+
   return (
     <div className="aboutme-container">
       <img className="my-photo" src={Myself} alt="Hello, it's me!"></img>
@@ -45,6 +49,7 @@ function AboutMe() {
           or continue surfing my site!
         </p>
         <Link />
+        {!isDesktop ? <BtnMobile /> : null}
         <img className="earth" src={earth} alt="earth"></img>
       </div>
     </div>

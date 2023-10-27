@@ -2,11 +2,13 @@ import React from "react";
 import video from "../assets/world.mp4"
 import { useRef } from "react";
 import Introduction from "./Introduction";
+import BtnMobile from '../components/Base_element/external_element/BtnMobile';
 const Landing = () => {
   const videoRef = useRef();
   const setPlayBack = () => {
     videoRef.current.playbackRate = .8;
   };
+  const isDesktop = window.innerWidth > 840;
   return (
     <div className="video-container">
       <video
@@ -17,6 +19,7 @@ const Landing = () => {
         Sorry, your browser doesn't support videos.
       </video>
       <Introduction />
+      {!isDesktop ? <BtnMobile /> : null}
     </div>
   );
 };

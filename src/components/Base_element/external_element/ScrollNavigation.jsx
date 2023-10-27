@@ -8,9 +8,9 @@ function ScrollNavigation() {
     useEffect(() => {
         const handleScroll = (event) => {
             console.log('Scrolling');
-            if (event.deltaY > 3) {
+            if (event.deltaY > 10) {
                 switch (location.pathname) {
-                    case '/myportfolio':
+                    case '/myportfolio/':
                         navigate('/aboutMe');
                         break;
                     case '/aboutMe':
@@ -25,7 +25,7 @@ function ScrollNavigation() {
             } else if (event.deltaY < 0) {
                 switch (location.pathname) {
                     case '/aboutMe':
-                        navigate('/');
+                        navigate('/myportfolio/');
                         break;
                     case '/services':
                         navigate('/aboutMe');

@@ -1,10 +1,10 @@
 import './App.scss';
 import { BrowserRouter as Router } from 'react-router-dom';
 import AnimatedCursor from "react-animated-cursor"
-import Mouse from './components/Mouse.jsx';
+import Mouse from './components/Base_element/external_element/Mouse.jsx';
 import MainRoute from './components/Route/Router';
 import Nav from "./components/Base_element/Nav";
-import ScrollNavigation from './components/ScrollNavigation';
+import ScrollNavigation from './components/Base_element/external_element/ScrollNavigation';
 function App() {
   const isDesktop = window.innerWidth > 840;
   return (
