@@ -2,7 +2,7 @@ import React from "react"
 import { Route, Routes } from 'react-router-dom'
 
 import Main from "../Base_element/Main"
-import Error from "../../pages/Error"
+/* import Error from "../../pages/Error" */
 import AboutMe from "../../pages/AboutMe"
 import Services from "../../pages/Services"
 import Projects from "../../pages/Projects"
@@ -14,7 +14,7 @@ function MainRoute() {
         <Routes>
 
             <Route path="/myportfolio" element={<Main />} />
-            <Route path="*" element={<Error />} />
+            <Route path="*" element={<Main />} />
             <Route path="/aboutMe" element={<AboutMe />} />
             <Route path="/services" element={<Services />} />
             <Route path="/projects" element={<Projects />} />

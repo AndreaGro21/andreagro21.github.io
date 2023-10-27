@@ -13,7 +13,7 @@
 
 
 
-body {
+html, body {
     width: 100%;
     height: 100vh;
     overflow-x: hidden;
@@ -24,8 +24,6 @@ body {
     color: #fefefe;
     background: #000;
     scroll-behavior: smooth;
-
-
 }
 
 h1,
