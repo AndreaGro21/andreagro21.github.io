@@ -1,4 +1,12 @@
 @media screen and (max-width:839px) {
+    html, 
+    body {
+ 
+        overflow-y: default;
+
+    }
+   
+   
     h1 {
         font-size: 2rem !important;
         padding-top: 10px;
@@ -100,21 +108,27 @@ padding-top: 60px;
             box-sizing: border-box;
             padding-top: 0;
 h1{
-    padding-top: 0;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 1.8rem;
 }
             .curious {
                 font-size: .8rem;
             }
 
             .logo-contact_container {
+                margin-top: 10px;
                 transform: translateX(-1.1rem);
-
                 justify-content: space-between;
-
-                a,
-                button {
+button{
+    img{
+        width: 90%;
+        margin-left: 10px;
+        margin-top: -5px;
+    }
+}
+                a{
                     width: 100%;
-
                     img {
                         width: 80%;
                     }
@@ -124,7 +138,7 @@ h1{
         p {
             margin: 2px 0;
             font-size: 1rem;
-            line-height: 2;
+            line-height: 1.5;
             text-align: center;
         }
 
@@ -149,7 +163,7 @@ h1{
 //SERVICE mobile
 @media screen and (max-width:839px) {
     .main-service {
-        width: 90%;
+        width: 100%;
         background-size: 100%;
         height: 100%;
 
@@ -248,6 +262,8 @@ h1{
                 position: relative;
                 z-index: -1;
                 height: 75%;
+                width: 95%;
+                align-self: center;
             }
 
             h2 {
@@ -273,9 +289,9 @@ h1{
                 background: rgba(27, 26, 26, 0.8);
                 border-radius: 50%;
                 width: 60px;
-                filter: drop-shadow(12px  
-                5px 15px rgb(103, 229, 24));
-transform: translateX(-30px);
+                filter: drop-shadow(2px  
+                2px 15px rgb(103, 229, 24));
+transform: translateX(-40px);
             }
 
             .arrow-left {

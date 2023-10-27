@@ -4,14 +4,13 @@ import AnimatedCursor from "react-animated-cursor"
 import Mouse from './components/Mouse.jsx';
 import MainRoute from './components/Route/Router';
 import Nav from "./components/Base_element/Nav";
+import ScrollNavigation from './components/ScrollNavigation';
 function App() {
   const isDesktop = window.innerWidth > 840;
   return (
     <div className="App">
       <Router>
-        <Nav />
-        <MainRoute />
-        <Mouse />
+        <ScrollNavigation />
         {isDesktop ? <AnimatedCursor
           className="cursor-image"
           innerSize={10}
@@ -28,8 +27,10 @@ function App() {
             border: 'none',
             backgroundColor: 'white',
             backgroundSize: '20% 20%',
-          }}
-        /> : null}
+          }} /> : null}
+        <Nav />
+        <MainRoute />
+        {isDesktop ? <Mouse /> : null}
       </Router>
     </div>
   );
@@ -38,13 +39,12 @@ function App() {
 export default App;
 
 
-/* 
+/*
 PROBLEMI:
 -about page - const non usata,
--aboutme/link - padding e posizione logolink
+-aboutme/link -  posizione logolink
 -skills img- come metto il nome del file nell'alt?
 bottone del mouse in mobile
-il cazzo di luna destra perche si sposta?
 */
 
 
@@ -54,13 +54,11 @@ soluzione per lo scroll delle pagine
 contact
 ?footer
 ^^^^^^^^^^^meta e altre merde
+
+animazione di entrata per aboutme
 */
 
 /* TO MODIFY:
-img e png
-logo link piu grandi e curius piu piccolo
-project da fare responsive
-project  dettagli da fare responsive
 openclassroom evidenziato
  */
 

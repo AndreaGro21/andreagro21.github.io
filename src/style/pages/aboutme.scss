@@ -41,10 +41,12 @@
 }
 
 .earth {
-   width: 25%;
+   z-index: 1;
+transform: rotate(20deg);
+   width: 20%;
    position: absolute;
-   left: 5px;
-   bottom: -15px;
+   left: -85px;
+   bottom: -65px;
 
 
 }

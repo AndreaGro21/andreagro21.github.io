@@ -12,13 +12,12 @@ function MainRoute() {
 
     return (
         <Routes>
-
             <Route path="/myportfolio" element={<Main />} />
-            <Route path="*" element={<Main />} />
             <Route path="/aboutMe" element={<AboutMe />} />
             <Route path="/services" element={<Services />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/projects/:id" element={<ProjectDetails />} />
+            <Route path="*" element={<Main />} />
         </Routes>
     )
 }
