@@ -3,7 +3,7 @@ import ProjectCard from "../components/ProjectCard";
 import Kasa_cover from "../assets/img/kasa.webp";
 import OhmyFood from "../assets/img/ohmyfood.webp";
 import event77 from "../assets/img/77event.webp";
-import moon from "../assets/img/moon.png"
+import moon from "../assets/img/moon.webp"
 function Projects() {
     const projectsData = [
         {
@@ -26,7 +26,7 @@ function Projects() {
         },
         {
             id: "",
-            projectTitle: "77-events",
+            projectTitle: "724-events",
             projectDes: `Really challenging for this debugging project,
             a major events company found itself without a developer, 
             I threw myself into this project with specific requirements and little time available.`,
@@ -61,7 +61,7 @@ function Projects() {
                     source={projectsData[currentProjectIndex].source}
                 />
                 <button onClick={nextProject}>
-                    <img className="arrow-right" src={moon} alt="arrow-right"></img>
+                    <img className="arrow-right" src={moon} alt="arrow-right" width="50" height="auto"></img>
                 </button>
             </article>
         </main>

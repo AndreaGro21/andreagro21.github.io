@@ -4,17 +4,19 @@
    width: 100%;
    height: 100vh;
    padding-top: 70px;
-   background: url("../../assets/img/BackGround/sun.png");
+   background: url("../../assets/img/BackGround/sun.webp");
    background-position: 125% 85%;
    background-repeat: no-repeat;
    background-size: 50%;
    background-color: contrast(200%);
+
    .my-photo {
-     margin-top: 20px;
+      margin-top: 20px;
       width: 20%;
       padding: 20px 40px;
       border-radius: 150%;
    }
+
    .presentation-container {
       display: flex;
       flex-direction: column;
@@ -22,14 +24,16 @@
       align-items: flex-start;
       text-align: left;
       width: 90%;
-      
+
    }
+
    h1 {
       font-size: 2.4rem;
       padding-top: 10px;
       text-align: left;
-      
+
    }
+
    p {
       font-size: 1.1rem;
       line-height: 2.2;
@@ -37,10 +41,10 @@
 }
 
 .earth {
-   width: 20%;
+   width: 25%;
    position: absolute;
-   z-index: -1;
-   top: 75%;
-   right: 85%;
+   left: 5px;
+   bottom: -15px;
+
 
 }

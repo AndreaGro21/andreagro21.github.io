@@ -23,8 +23,8 @@ const projectsData = [
         link: 'https://github.com/AndreaGro21/Gronchi_Andrea_4_032023'
     },
     {
-        id: "77-events",
-        projectTitle: "77-events",
+        id: "724-events",
+        projectTitle: "724-events",
         projectDes: `Really challenging for this debugging project,
       a major events company found itself without a developer, 
       I threw myself into this project with specific requirements and little time available.`,

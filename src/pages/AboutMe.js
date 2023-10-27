@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react"
 import Myself from "../assets/img/io.webp"
-import earth from "../assets/img/BackGround/earth.jpg"
+import earth from "../assets/img/BackGround/earth.webp"
 import Link from "../components/Link";
 function AboutMe() {
   const phrases = {
