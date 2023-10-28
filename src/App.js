@@ -11,6 +11,7 @@ function App() {
     <div className="App">
       <Router>
         <ScrollNavigation />
+        {isDesktop ? <Mouse /> : null}
         {isDesktop ? <AnimatedCursor
           className="cursor-image"
           innerSize={10}
@@ -25,12 +26,13 @@ function App() {
           }}
           innerStyle={{
             border: 'none',
+            backgroundImage: 'none',
             backgroundColor: 'white',
             backgroundSize: '20% 20%',
           }} /> : null}
         <Nav />
         <MainRoute />
-        {isDesktop ? <Mouse /> : null}
+
       </Router>
     </div>
   );
@@ -49,8 +51,6 @@ bottone del mouse in mobile
 
 
 /* TO ADD:
-bottone che manda ad un altra pagina da mobile
-soluzione per lo scroll delle pagine
 contact
 ?footer
 ^^^^^^^^^^^meta e altre merde
@@ -60,6 +60,7 @@ animazione di entrata per aboutme
 
 /* TO MODIFY:
 openclassroom evidenziato
+services text aligh
  */
 
 
