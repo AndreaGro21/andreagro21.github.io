@@ -7,8 +7,7 @@ function ScrollNavigation() {
 
     useEffect(() => {
         const handleScroll = (event) => {
-            console.log('Scrolling');
-            if (event.deltaY > 10) {
+            if (event.deltaY > 0) {
                 switch (location.pathname) {
                     case '/myportfolio/':
                         navigate('/aboutMe');

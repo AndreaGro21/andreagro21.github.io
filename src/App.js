@@ -51,11 +51,14 @@ bottone del mouse in mobile
 
 
 /* TO ADD:
+aggiustare testo desktop services
+ingresso mobile intrudction
+cv?
+ingresso mobile about
 contact
 ?footer
 ^^^^^^^^^^^meta e altre merde
-
-animazione di entrata per aboutme
+animazione di entrata per service luce sui btn mobile
 */
 
 /* TO MODIFY:

@@ -1,61 +1,78 @@
-import React, { useState, useEffect } from "react"
-import Myself from "../assets/img/io.webp"
-import earth from "../assets/img/BackGround/earth.webp"
+import React, { useState, useEffect } from "react";
+import Myself from "../assets/img/io.webp";
+import earth from "../assets/img/BackGround/earth.webp";
 import Link from "../components/Link";
 import BtnMobile from '../components/Base_element/external_element/BtnMobile';
+
+const phrases = [
+  {
+    lang: 'english',
+    text: 'Welcome to my website!',
+  },
+  {
+    lang: 'french',
+    text: 'Bienvenue sur mon site!',
+  },
+  {
+    lang: 'italian',
+    text: 'Benvenuti nel mio sito!',
+  },
+  {
+    lang: 'spanish',
+    text: 'Bienvenidos a mi sitio web!',
+  },
+];
+
 function AboutMe() {
-  const phrases = {
-    english: 'Welcome to my website!',
-    french: 'Bienvenue sur mon site!',
-    italian: 'Benvenuti nel mio sito!',
-    spanish: 'Bienvenidos a mi sitio web!',
-  };
-  const languages = ['english', 'french', 'italian', 'spanish'];
-  const [currentLanguage, setCurrentLanguage] = useState('');
-  console.log(currentLanguage)
-  const [animatedText, setAnimatedText] = useState(phrases.english);
+  const [currentLanguageIndex, setCurrentLanguageIndex] = useState(0);
+  const currentPhrase = phrases[currentLanguageIndex].text;
+  const [displayedText, setDisplayedText] = useState('');
+
   useEffect(() => {
-    let currentIndex = 0;
-    const intervalDelay = 2000;
-    const intervalId = setInterval(() => {
-      currentIndex = (currentIndex + 1) % languages.length;
-      setCurrentLanguage(languages[currentIndex]);
-      setAnimatedText(phrases[languages[currentIndex]]);
+    const intervalDelay = 150;
+    let charIndex = 0;
+
+    const timer = setInterval(() => {
+      if (charIndex < currentPhrase.length) {
+        setDisplayedText(currentPhrase.slice(0, charIndex + 1));
+        charIndex++;
+      } else {
+        setCurrentLanguageIndex((currentLanguageIndex + 1) % phrases.length);
+        charIndex = 0;
+      }
     }, intervalDelay);
+
     return () => {
-      clearInterval(intervalId);
+      clearInterval(timer);
     };
-  });
+  }, [currentLanguageIndex, currentPhrase]);
   const isDesktop = window.innerWidth > 840;
 
   return (
-    <div className="aboutme-container">
+    <main className="aboutme-container">
       <img className="my-photo" src={Myself} alt="Hello, it's me!"></img>
       <div className="presentation-container">
-        <h1>{animatedText}</h1>
+        <h1>   {displayedText.split('').map((letter, index) => (
+          <span key={index} className="fade-in-text">{letter}</span>
+        ))}</h1>
         <p className="aboutme-presentation">
-          I'm 33 years old italian, actually living in Bordeaux.<br />
-          After a nice career in Wine buisness,
-          i decide to turned back to my first passion,the web development.<br />
-          Thanks to OpenClassRooms I acquired a diploma as a front-end web developer!
+          "I'm a 33-year-old from Italy, currently residing in Bordeaux.<br />
+          After a successful career in the wine business, I decided to return to my first passion, web development.<br />
+          Thanks to <b>OpenClassRooms</b>, I acquired a diploma as a front-end web developer!
           <br />
           <strong>
-            Can't wait to develop new projects whit you, and continue to grow professionally and personally!
+            Can't wait to develop new projects with you and continue to grow professionally and personally!"
           </strong>
         </p>
         <p className="curious">
-          Curious? <br></br>You can download my cV here,
-          Look at my Linkedln or Github
-          or continue surfing my site!
+          Curious? <br></br>You can reach out to me, visit my LinkedIn or GitHub profiles, or explore more of my website!
         </p>
         <Link />
         {!isDesktop ? <BtnMobile /> : null}
         <img className="earth" src={earth} alt="earth"></img>
       </div>
-    </div>
-
-
+    </main>
   )
 }
 
-export default AboutMe
+export default AboutMe;

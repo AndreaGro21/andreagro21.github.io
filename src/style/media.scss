@@ -1,12 +1,13 @@
 @media screen and (max-width:839px) {
-    html, 
+
+    html,
     body {
- 
+
         overflow-y: default;
 
     }
-   
-   
+
+
     h1 {
         font-size: 2rem !important;
         padding-top: 10px;
@@ -97,8 +98,10 @@
 @media screen and (max-width:539px) {
     .aboutme-container {
         flex-direction: column;
-        background-position: 135% 90%;
-padding-top: 60px;
+        background-position: 135% 110%;
+        background-size: 100%;
+        padding-top: 60px;
+
         .my-photo {
             display: none;
         }
@@ -106,46 +109,76 @@ padding-top: 60px;
         .presentation-container {
             width: 100%;
             box-sizing: border-box;
-            padding-top: 0;
-h1{
-    padding-top: 10px;
-    text-align: center;
-    font-size: 1.8rem;
-}
+            padding: 5px;
+
+            h1 {
+                padding-top: 10px;
+                text-align: center;
+                font-size: 1.8rem;
+                height: 100px;
+            }
+
             .curious {
                 font-size: .8rem;
             }
 
             .logo-contact_container {
                 margin-top: 10px;
-                transform: translateX(-1.1rem);
                 justify-content: space-between;
-button{
-    img{
-        width: 90%;
-        margin-left: 10px;
-        margin-top: -5px;
-    }
-}
-                a{
+
+                button {
+                    img {
+                        width: 100%;
+                        margin-top: -5px;
+                    }
+                }
+
+                a {
                     width: 100%;
+
                     img {
                         width: 80%;
                     }
                 }
             }
+
+            .btn-mobile_container {
+
+                background: rgba(0, 0, 0, 0.656);
+
+                button {
+                    
+                    width: 50%;
+                    padding: 20px;
+                    background: linear-gradient(200deg, rgba(255, 255, 255, 0) 45%, rgba(255, 175, 2, 0.254) 50%, rgba(255, 255, 255, 0) 55%);
+                    background-size: 500%;
+                    background-position: right;
+                    animation: moveBg 3.5s ease infinite;
+                    color: rgba(250, 252, 249, 0.886);
+                }
+            }
+
+
+
         }
+
+        .aboutme-presentation {
+            width: 100%;
+        }
+
         p {
+
             margin: 2px 0;
-            font-size: 1rem;
+            font-size: 1.2rem;
             line-height: 1.5;
             text-align: center;
         }
 
-        button {
-            padding: 0 !important;
-            box-shadow: none;
-        }
+
+    }
+
+    .earth {
+        display: none;
     }
 }
 
@@ -289,9 +322,8 @@ button{
                 background: rgba(27, 26, 26, 0.8);
                 border-radius: 50%;
                 width: 60px;
-                filter: drop-shadow(2px  
-                2px 15px rgb(103, 229, 24));
-transform: translateX(-40px);
+                filter: drop-shadow(2px 2px 15px rgb(103, 229, 24));
+                transform: translateX(-40px);
             }
 
             .arrow-left {
@@ -306,7 +338,7 @@ transform: translateX(-40px);
             .arrow-right {
                 &:hover {
                     filter: drop-shadow(0 0 5mm rgb(103, 229, 24));
-                    transform: translateX(-30px)  rotate(-60deg);
+                    transform: translateX(-30px) rotate(-60deg);
                 }
             }
         }

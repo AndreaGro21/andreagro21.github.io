@@ -9,17 +9,27 @@
         background: none;
         flex-basis: 20%;
         border: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+
         &:hover {
             animation: jelly 2s infinite;
             transform-origin: 50% 100%;
+
         }
 
-        img{
-            width: 55%;
+        img {
+            width: 45%;
         }
     }
 
     a {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
         flex-basis: 20%;
         text-align: center;
 
@@ -30,7 +40,7 @@
     }
 
     img {
-        width: 50%;
+        width: 40%;
     }
 }
 
