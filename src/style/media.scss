@@ -211,6 +211,12 @@
             .service-card_container {
                 width: 100%;
                 padding: 15px 0;
+             
+           
+               
+            }
+            button{
+                animation: elemScale 2s backwards;
             }
         }
 
@@ -222,6 +228,7 @@
         .tec-skills {
             gap: 0;
             padding: 0;
+            animation: elemScale 2s 1s backwards;
         }
 
         img {

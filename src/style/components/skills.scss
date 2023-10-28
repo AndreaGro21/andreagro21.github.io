@@ -7,11 +7,29 @@
     padding: 0 10%;
     flex-wrap: wrap;
     box-sizing: content-box;
+
     img {
         padding-top: 20px;
         width: 6rem;
-        filter: drop-shadow(0 0 0.55rem rgb(246, 166, 6));
+
+
     }
+
+    p {
+        position:absolute;
+        transform: translateY(20px);
+        background: none;
+        background: -webkit-linear-gradient(333deg, rgba(121, 92, 9, 1) 16%, rgb(186, 186, 186) 40%, rgb(127, 126, 126) 61%, rgba(0, 255, 85, 1) 84%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: "cinzel", sans-serif;
+        font-weight: bolder;
+
+
+     filter: drop-shadow(-45px -29px 3px #00ff55) drop-shadow(57px 35px 3px #795c09);
+    }
+
 }
 
 

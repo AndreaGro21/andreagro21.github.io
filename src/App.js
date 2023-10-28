@@ -43,10 +43,8 @@ export default App;
 
 /*
 PROBLEMI:
--about page - const non usata,
--aboutme/link -  posizione logolink
+-about page - const non usata, risoloto con console.log
 -skills img- come metto il nome del file nell'alt?
-bottone del mouse in mobile
 */
 
 
@@ -54,10 +52,8 @@ bottone del mouse in mobile
 aggiustare testo desktop services
 ingresso mobile intrudction
 cv?
-ingresso mobile about
 contact
 ?footer
-^^^^^^^^^^^meta e altre merde
 animazione di entrata per service luce sui btn mobile
 */
 

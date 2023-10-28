@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Myself from "../assets/img/io.webp";
 import earth from "../assets/img/BackGround/earth.webp";
-import Link from "../components/Link";
+import Link from "../components/LogoLinks";
 import BtnMobile from '../components/Base_element/external_element/BtnMobile';
 
 const phrases = [
