@@ -2,11 +2,8 @@
 
     html,
     body {
-
         overflow-y: default;
-
     }
-
 
     h1 {
         font-size: 2rem !important;
@@ -18,7 +15,6 @@
         display: none;
     }
 }
-
 
 //NAV
 @media screen and (min-width:250px) and (max-width:839px) {
@@ -104,8 +100,6 @@
         background-position: 135% 110%;
         background-size: 100%;
         padding-top: 60px;
-     
-
         .my-photo {
             display: none;
         }
@@ -114,7 +108,6 @@
             width: 100%;
             box-sizing: border-box;
             padding: 5px;
-            height: 100vh;
 
             h1 {
                 padding-top: 10px;
@@ -148,14 +141,11 @@
             }
 
             .btn-mobile_container {
-                position: absolute;
-                bottom: 0;
 
                 button {
-
                     width: 40%;
                     padding: 20px;
-                    background: linear-gradient(200deg, rgba(0, 0, 0, 0.5) 45%, rgba(255, 175, 2, 0.254) 50%, rgba(2, 2, 2, 0.5) 55%);
+                    background: linear-gradient(200deg, rgba(0, 0, 0, 0.5) 45%, rgba(255, 175, 2, 0.254) 50%, rgba(2, 2, 2, 0.5) 55%) !important;
                     background-size: 500%;
                     background-position: right;
                     animation: moveBg 3.5s ease infinite;

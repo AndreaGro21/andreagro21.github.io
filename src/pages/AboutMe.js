@@ -73,9 +73,9 @@ function AboutMe() {
           Curious? <br></br>You can reach out to me, visit my LinkedIn or GitHub profiles, or explore more of my website!
         </p>
         <Link />
-        {!isDesktop ? <BtnMobile /> : null}
         <img className="earth" src={earth} alt="earth"></img>
       </div>
+        {!isDesktop ? <BtnMobile /> : null}
     </main>
   )
 }

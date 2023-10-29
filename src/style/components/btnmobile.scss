@@ -1,12 +1,12 @@
-
-.btn-mobile_container{
-position: absolute;
+.btn-mobile_container {
+    position: absolute;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    bottom: 2px;
+    bottom: 20px;
     width: 100%;
-    button{
+
+    button {
         border-radius: 25px;
         font-family: "cinzel", sans-serif;
         width: 40%;
