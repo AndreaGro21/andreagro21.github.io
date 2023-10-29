@@ -3,12 +3,13 @@
 position: absolute;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    bottom: 0;
+    justify-content: space-around;
+    bottom: 2px;
     width: 100%;
     button{
+        border-radius: 25px;
         font-family: "cinzel", sans-serif;
-        width: 50%;
+        width: 40%;
         padding: 20px;
         background: linear-gradient(200deg, rgba(255, 255, 255, 0) 45%, rgba(44, 255, 2, 0.254) 50%, rgba(255, 255, 255, 0) 55%);
         background-size: 300%;

@@ -57,8 +57,13 @@ function AboutMe() {
         ))}</h1>
         <p className="aboutme-presentation">
           "I'm a 33-year-old from Italy, currently residing in Bordeaux.<br />
-          After a successful career in the wine business, I decided to return to my first passion, web development.<br />
-          Thanks to <b>OpenClassRooms</b>, I acquired a diploma as a front-end web developer!
+          After a successful career in the wine business, I decided to return to my first passion, digital sciences!<br />
+          Thanks to <b>OpenClassRooms</b>,
+           I earned a diploma as a front-end web developer!
+           <br /> 
+           The skills I gained in my previous journey are highly transferable to this new domain.
+           <br /> 
+           For instance, my proficiency in four languages, experience in public relations, strong organizational abilities, and other soft skills set me apart.
           <br />
           <strong>
             Can't wait to develop new projects with you and continue to grow professionally and personally!"

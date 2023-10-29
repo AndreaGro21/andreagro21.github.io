@@ -1,25 +1,19 @@
 import React from 'react';
-
-function Footer (){
-    return (
-        <footer>
-               <form action="#" method="post">
-            <label htmlFor="nom">Nom</label>
-            <input type="text" name="nom" id="nom" />
-            <label htmlFor="email">Email</label>
-            <input type="email" name="email" id="email" />
-            <label htmlFor="enterprise"> Are you a company?
-            <input type="checkbox" id="enterprise" name="enterprise" value="Car"/></label>
-            <label htmlFor="message">Message</label>
-            <textarea
-              name="message"
-              id="message"
-              cols="30"
-              rows="5"
-            ></textarea>
-            <input type="submit" value="Envoyer" />
-          </form>
-        </footer>
-    )
-    }
-    export default Footer
+import MyFormPage from './external_element/MyFormPage';
+function Footer() {
+  return (
+    <footer>
+       <div className='footer-info'>
+      <p>© 2023 Andrea Gronchi</p>
+          <p>Bordeaux, France</p>
+          </div>
+      <div className='footer-info'>
+          <a href="mailto:andreagronchi21@gmial.com">andreagronchi21@gmial.com</a>
+          <p></p>
+          <a href="tel:631-814-032">(+33) 06 31 81 40 32</a>
+        <MyFormPage />
+      </div>
+    </footer>
+  )
+}
+export default Footer

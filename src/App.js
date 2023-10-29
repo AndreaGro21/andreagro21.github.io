@@ -5,6 +5,7 @@ import Mouse from './components/Base_element/external_element/Mouse.jsx';
 import MainRoute from './components/Route/Router';
 import Nav from "./components/Base_element/Nav";
 import ScrollNavigation from './components/Base_element/external_element/ScrollNavigation';
+import Footer from './components/Base_element/Footer';
 function App() {
   const isDesktop = window.innerWidth > 840;
   return (
@@ -32,7 +33,7 @@ function App() {
           }} /> : null}
         <Nav />
         <MainRoute />
-
+        {isDesktop ? <Footer /> : null}
       </Router>
     </div>
   );
@@ -49,11 +50,15 @@ PROBLEMI:
 
 
 /* TO ADD:
+Btn Mobile mettere radius
+abbassare il testo about!
+la descrizione logotag fuori schermo
+ricordarsi introduzione con state
 aggiustare testo desktop services
 ingresso mobile intrudction
 cv?
 contact
-?footer
+?footer con:copiright, mail numero, luogo
 animazione di entrata per service luce sui btn mobile
 */
 

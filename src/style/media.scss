@@ -143,23 +143,16 @@
             }
 
             .btn-mobile_container {
-
-                background: rgba(0, 0, 0, 0.656);
-
                 button {
-                    
-                    width: 50%;
+                    width: 40%;
                     padding: 20px;
-                    background: linear-gradient(200deg, rgba(255, 255, 255, 0) 45%, rgba(255, 175, 2, 0.254) 50%, rgba(255, 255, 255, 0) 55%);
+                    background: linear-gradient(200deg, rgba(0, 0, 0, 0.5) 45%, rgba(255, 175, 2, 0.254) 50%, rgba(2, 2, 2, 0.5) 55%);
                     background-size: 500%;
                     background-position: right;
                     animation: moveBg 3.5s ease infinite;
                     color: rgba(250, 252, 249, 0.886);
                 }
             }
-
-
-
         }
 
         .aboutme-presentation {
@@ -211,11 +204,12 @@
             .service-card_container {
                 width: 100%;
                 padding: 15px 0;
-             
-           
-               
+
+
+
             }
-            button{
+
+            button {
                 animation: elemScale 2s backwards;
             }
         }
