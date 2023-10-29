@@ -14,6 +14,9 @@
         text-align: center;
     }
 
+    footer {
+        display: none;
+    }
 }
 
 
@@ -101,6 +104,7 @@
         background-position: 135% 110%;
         background-size: 100%;
         padding-top: 60px;
+     
 
         .my-photo {
             display: none;
@@ -110,6 +114,7 @@
             width: 100%;
             box-sizing: border-box;
             padding: 5px;
+            height: 100vh;
 
             h1 {
                 padding-top: 10px;
@@ -143,7 +148,11 @@
             }
 
             .btn-mobile_container {
+                position: absolute;
+                bottom: 0;
+
                 button {
+
                     width: 40%;
                     padding: 20px;
                     background: linear-gradient(200deg, rgba(0, 0, 0, 0.5) 45%, rgba(255, 175, 2, 0.254) 50%, rgba(2, 2, 2, 0.5) 55%);
@@ -160,14 +169,11 @@
         }
 
         p {
-
             margin: 2px 0;
-            font-size: 1.2rem;
+            font-size: .9rem;
             line-height: 1.5;
             text-align: center;
         }
-
-
     }
 
     .earth {
@@ -204,9 +210,6 @@
             .service-card_container {
                 width: 100%;
                 padding: 15px 0;
-
-
-
             }
 
             button {
@@ -273,7 +276,6 @@
 }
 
 // Project mobile & tablette
-
 @media screen and (max-width:800px) {
     main {
         padding-bottom: 0;
