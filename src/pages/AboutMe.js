@@ -59,11 +59,11 @@ function AboutMe() {
           "I'm a 33-year-old from Italy, currently residing in Bordeaux.<br />
           After a successful career in the wine business, I decided to return to my first passion, digital sciences!<br />
           Thanks to <b>OpenClassRooms</b>,
-           I earned a diploma as a front-end web developer!
-           <br /> 
-           The skills I gained in my previous journey are highly transferable to this new domain.
-           <br /> 
-           For instance, my proficiency in four languages, experience in public relations, strong organizational abilities, and other soft skills set me apart.
+          I earned a diploma as a front-end web developer!
+          <br />
+          The skills I gained in my previous journey are highly transferable to this new domain.
+          <br />
+          For instance, my proficiency in four languages, experience in public relations, strong organizational abilities, and other soft skills set me apart.
           <br />
           <strong>
             Can't wait to develop new projects with you and continue to grow professionally and personally!"
@@ -73,9 +73,15 @@ function AboutMe() {
           Curious? <br></br>You can reach out to me, visit my LinkedIn or GitHub profiles, or explore more of my website!
         </p>
         <Link />
+        {!isDesktop ? <div className="mobile-info">
+          <a href="mailto:andreagronchi21@gmial.com">andreagronchi21@gmial.com</a>
+          <a href="tel:631-814-032">(+33) 06 31 81 40 32</a>
+        </div> : null}
+        
+
         <img className="earth" src={earth} alt="earth"></img>
       </div>
-        {!isDesktop ? <BtnMobile /> : null}
+      {!isDesktop ? <BtnMobile /> : null}
     </main>
   )
 }

@@ -29,13 +29,19 @@
   color: rgb(194, 242, 169);
   font-size: 6rem;
   font-family: "cinzel", sans-serif;
+
+  span{
+    display: block;
+    font-size: 1rem;
+  
+  }
 }
 
 .presentation {
   position: absolute;
   opacity: 0;
   bottom: 25%;
-  left: 30%;
+  left: 34%;
   filter: drop-shadow(-30px 0px 10px #08f45ffd);
   animation:
     prese 1.5s forwards 6s alternate,
@@ -48,7 +54,7 @@
     opacity: 0;
     scale: 0;
     transform: translateX(-220%);
-  }
+  } 
 
   to {
     color: #FFF;

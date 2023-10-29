@@ -44,6 +44,18 @@
       text-overflow: clip;
    }
 }
+.mobile-info{
+   display: flex;
+   justify-content: space-around;
+   margin-top: 10px;
+   font-size: 0.8rem;
+   a {
+           
+      text-decoration: underline;
+      text-shadow: #FC0 1px 0 10px;
+      color: #fff;
+  }
+}
 
 .earth {
    background: none;

@@ -50,21 +50,17 @@ PROBLEMI:
 
 
 /* TO ADD:
-Btn Mobile mettere radius
-abbassare il testo about!
+come il footer in mobile introduction
 la descrizione logotag fuori schermo
 ricordarsi introduzione con state
 aggiustare testo desktop services
 ingresso mobile intrudction
 cv?
-contact
-?footer con:copiright, mail numero, luogo
 animazione di entrata per service luce sui btn mobile
 */
 
 /* TO MODIFY:
 openclassroom evidenziato
-services text aligh
  */
 
 

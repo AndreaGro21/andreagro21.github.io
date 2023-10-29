@@ -9,7 +9,6 @@ function Footer() {
           </div>
       <div className='footer-info'>
           <a href="mailto:andreagronchi21@gmial.com">andreagronchi21@gmial.com</a>
-          <p></p>
           <a href="tel:631-814-032">(+33) 06 31 81 40 32</a>
         <MyFormPage />
       </div>
