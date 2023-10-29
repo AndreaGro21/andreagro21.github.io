@@ -51,6 +51,7 @@ function AboutMe() {
   return (
     <main className="aboutme-container">
       <img className="my-photo" src={Myself} alt="Hello, it's me!"></img>
+      
       <div className="presentation-container">
         <h1>   {displayedText.split('').map((letter, index) => (
           <span key={index} className="fade-in-text">{letter}</span>
@@ -68,6 +69,8 @@ function AboutMe() {
           <strong>
             Can't wait to develop new projects with you and continue to grow professionally and personally!"
           </strong>
+          <br />
+          <b className="slogan">"Per aspera ad astra"</b>
         </p>
         <p className="curious">
           Curious? <br></br>You can reach out to me, visit my LinkedIn or GitHub profiles, or explore more of my website!

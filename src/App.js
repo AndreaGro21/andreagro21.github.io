@@ -50,6 +50,7 @@ PROBLEMI:
 
 
 /* TO ADD:
+un flash per far capire di selzionare i titoli service
 come il footer in mobile introduction
 la descrizione logotag fuori schermo
 ricordarsi introduzione con state

@@ -3,16 +3,14 @@
     text-align: center;
     justify-content: center;
     align-items: center;
-    gap: 1.5rem;
+    gap: 1.3rem;
     padding: 0 10%;
     flex-wrap: wrap;
     box-sizing: content-box;
 
     img {
         padding-top: 20px;
-        width: 6rem;
-
-
+        width: 5rem;
     }
 
     p {
@@ -25,9 +23,7 @@
         -webkit-text-fill-color: transparent;
         font-family: "cinzel", sans-serif;
         font-weight: bolder;
-
-
-     filter: drop-shadow(-45px -29px 3px #00ff55) drop-shadow(57px 35px 3px #795c09);
+        filter: drop-shadow(-45px -29px 3px #00ff55) drop-shadow(57px 35px 3px #795c09);
     }
 
 }

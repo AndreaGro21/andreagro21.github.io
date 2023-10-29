@@ -182,6 +182,21 @@
             box-sizing: content-box;
             padding: 2px;
         }
+        .aboutme-presentation{
+            width: 80%;
+            font-size: 1.1rem;
+        }
+        .curious {
+            font-size: .8rem;
+            text-align: left;
+        }
+        .mobile-info{
+          justify-content: flex-start;
+          gap: 10px;
+        }
+        .earth{
+            left: 20%;
+        }
     }
 }
 
