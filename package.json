@@ -54,6 +54,7 @@
     "eslint-plugin-react": "^7.29.4",
     "eslint-plugin-react-hooks": "^4.5.0",
     "gh-pages": "^6.0.0",
-    "prettier": "^2.6.2"
+    "prettier": "^2.6.2",
+    "scrollyfills": "^1.0.0"
   }
 }

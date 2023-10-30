@@ -10,7 +10,7 @@ function App() {
   const isDesktop = window.innerWidth > 840;
   return (
     <div className="App">
-         <HashRouter basename="/myportfolio">
+         <HashRouter basename="/">
         <ScrollNavigation />
         {isDesktop ? <Mouse /> : null}
         {isDesktop ? <AnimatedCursor

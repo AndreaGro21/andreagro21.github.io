@@ -64,6 +64,7 @@ main {
 
   .desc-text {
     padding-top: 1rem;
+    margin-bottom: 70px;
     width: 70%;
     align-self: center;
     font-size: .8rem;
@@ -78,9 +79,10 @@ main {
     border-radius: 80px;
     width: 100%;
     max-width: 1347px;
-    height: 600px;
+    height: 70dvh;
     object-fit: cover;
     position: relative;
+ 
 
     &:hover+.desc-text {
       transition: all 2s;

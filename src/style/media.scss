@@ -111,6 +111,7 @@
             width: 100%;
             box-sizing: border-box;
             padding: 5px;
+            height: 80vh;
 
             h1 {
                 padding-top: 10px;
@@ -184,7 +185,8 @@
         }
         .aboutme-presentation{
             width: 80%;
-            font-size: 1.1rem;
+ 
+            font-size: .8rem;
         }
         .curious {
             font-size: .8rem;
@@ -299,13 +301,13 @@
         padding: 10px;
 
         a {
-            width: 200%;
+            width: 100%;
             z-index: 1;
 
             img {
                 position: relative;
                 z-index: -1;
-                height: 75%;
+                height: 60dvh;
                 width: 95%;
                 align-self: center;
             }
@@ -324,7 +326,7 @@
         button {
             overflow: visible;
             width: 20px;
-            height: 600px;
+            height: 300px;
             padding: 0;
             z-index: 2;
 
