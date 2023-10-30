@@ -50,9 +50,10 @@ function AboutMe() {
 
   return (
     <motion.div
-    initial={{opacity:0}}
-    animate={{opacity: 1}}
-    exit={{opacity:0, transition:{duration: 0.1}}}
+    initial={{width:0}}
+    animate={{width:"100%"}}
+    exit={{width:window.innerWidth, transition:{duration:0.2}
+    }}
     >
     <main className="aboutme-container">
       <img className="my-photo" src={Myself} alt="Hello, it's me!"></img>

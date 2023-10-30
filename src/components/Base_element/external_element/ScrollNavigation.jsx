@@ -9,7 +9,7 @@ function ScrollNavigation() {
         const handleScroll = (event) => {
             if (event.deltaY > 0) {
                 switch (location.pathname) {
-                    case '/myportfolio/':
+                    case '/myportfolio':
                         navigate('/aboutMe');
                         break;
                     case '/aboutMe':
@@ -24,7 +24,7 @@ function ScrollNavigation() {
             } else if (event.deltaY < 0) {
                 switch (location.pathname) {
                     case '/aboutMe':
-                        navigate('/myportfolio/');
+                        navigate('/myportfolio');
                         break;
                     case '/services':
                         navigate('/aboutMe');

@@ -13,7 +13,7 @@ const location = useLocation();
     return (
         <AnimatePresence>
         <Routes location={location} key={location.pathname}>
-            <Route path="/myportfolio/" element={<Main />} />
+            <Route path="/myportfolio" element={<Main />} />
             <Route path="/aboutMe" element={<AboutMe />} />
             <Route path="/services" element={<Services />} />
             <Route path="/projects" element={<Projects />} />

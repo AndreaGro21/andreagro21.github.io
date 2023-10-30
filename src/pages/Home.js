@@ -5,9 +5,10 @@ import {motion} from "framer-motion"
 function Home() {
     return (
         <motion.div
-        initial={{opacity:0}}
-        animate={{opacity: 1}}
-        exit={{opacity:0}}
+        initial={{width:0}}
+        animate={{width:"100%"}}
+        exit={{width:window.innerWidth, transition:{duration:0.4}
+        }}
         >
             <Nav />
             <main>

@@ -52,9 +52,10 @@ function Projects() {
     const isDesktop = window.innerWidth > 840;
     return (
         <motion.div
-        initial={{opacity:0}}
-        animate={{opacity: 1}}
-        exit={{opacity:0}}
+        initial={{width:0}}
+        animate={{width:"100%"}}
+        exit={{width:window.innerWidth, transition:{duration:0.2}
+        }}
         >
         <main>
             <h1>Projects</h1>

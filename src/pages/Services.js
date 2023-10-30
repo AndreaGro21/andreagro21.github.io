@@ -22,9 +22,10 @@ export default function Services() {
 
   return (
     <motion.div
-    initial={{opacity:0}}
-    animate={{opacity: 1}}
-    exit={{opacity:0}}
+    initial={{width:0}}
+    animate={{width:"100%"}}
+    exit={{width:"100%", transition:{duration:0.1}
+    }}
     >
     <main className="main-service">
       <h1 id="my-service">What I Can Do For You:</h1>
