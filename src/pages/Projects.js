@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import {motion} from "framer-motion"
 import ProjectCard from "../components/ProjectCard";
 import Kasa_cover from "../assets/img/kasa.webp";
 import OhmyFood from "../assets/img/ohmyfood.webp";
@@ -50,6 +51,11 @@ function Projects() {
     };
     const isDesktop = window.innerWidth > 840;
     return (
+        <motion.div
+        initial={{opacity:0}}
+        animate={{opacity: 1}}
+        exit={{opacity:0}}
+        >
         <main>
             <h1>Projects</h1>
             <article className="projects-container">
@@ -68,6 +74,7 @@ function Projects() {
             </article>
             {!isDesktop ? <BtnMobile /> : null}
         </main>
+        </motion.div>
     );
 }
 

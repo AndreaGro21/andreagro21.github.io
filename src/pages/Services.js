@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import {motion} from "framer-motion"
 import ServiceCard from "../components/ServiceCard"
 import TekSkills from "../components/Tekskills";
 import BtnMobile from '../components/Base_element/external_element/BtnMobile';
@@ -20,6 +21,11 @@ export default function Services() {
   const isDesktop = window.innerWidth > 840;
 
   return (
+    <motion.div
+    initial={{opacity:0}}
+    animate={{opacity: 1}}
+    exit={{opacity:0}}
+    >
     <main className="main-service">
       <h1 id="my-service">What I Can Do For You:</h1>
       <div className="service-container">
@@ -54,6 +60,7 @@ export default function Services() {
       <TekSkills />
       {!isDesktop ? <BtnMobile /> : null}
     </main>
+      </motion.div>
 
   )
 }

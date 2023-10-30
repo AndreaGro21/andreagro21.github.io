@@ -45,13 +45,11 @@ export default App;
 /*
 PROBLEMI:
 -about page - const non usata, risoloto con console.log
--skills img- come metto il nome del file nell'alt?
 */
 
 
 /* TO ADD:
 un flash per far capire di selzionare i titoli service
-come il footer in mobile introduction
 la descrizione logotag fuori schermo
 ricordarsi introduzione con state
 aggiustare testo desktop services

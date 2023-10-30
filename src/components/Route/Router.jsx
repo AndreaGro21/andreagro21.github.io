@@ -1,6 +1,6 @@
 import React from "react"
-import { Route, Routes } from 'react-router-dom'
-
+import { Route, Routes, useLocation } from 'react-router-dom'
+import {AnimatePresence} from "framer-motion"
 import Main from "../Base_element/Main"
 /* import Error from "../../pages/Error" */
 import AboutMe from "../../pages/AboutMe"
@@ -9,9 +9,10 @@ import Projects from "../../pages/Projects"
 import ProjectDetails from "../ProjectDetails"
 function MainRoute() {
 
-
+const location = useLocation();
     return (
-        <Routes>
+        <AnimatePresence>
+        <Routes location={location} key={location.pathname}>
             <Route path="/myportfolio/" element={<Main />} />
             <Route path="/aboutMe" element={<AboutMe />} />
             <Route path="/services" element={<Services />} />
@@ -19,6 +20,7 @@ function MainRoute() {
             <Route path="/projects/:id" element={<ProjectDetails />} />
             <Route path="*" element={<Main />} />
         </Routes>
+        </AnimatePresence>
     )
 }
 export default MainRoute

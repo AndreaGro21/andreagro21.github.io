@@ -3,7 +3,7 @@ import Myself from "../assets/img/io.webp";
 import earth from "../assets/img/BackGround/earth.webp";
 import Link from "../components/LogoLinks";
 import BtnMobile from '../components/Base_element/external_element/BtnMobile';
-
+import {motion} from "framer-motion"
 const phrases = [
   {
     lang: 'english',
@@ -49,6 +49,11 @@ function AboutMe() {
   const isDesktop = window.innerWidth > 840;
 
   return (
+    <motion.div
+    initial={{opacity:0}}
+    animate={{opacity: 1}}
+    exit={{opacity:0, transition:{duration: 0.1}}}
+    >
     <main className="aboutme-container">
       <img className="my-photo" src={Myself} alt="Hello, it's me!"></img>
       
@@ -86,6 +91,7 @@ function AboutMe() {
       </div>
       {!isDesktop ? <BtnMobile /> : null}
     </main>
+    </motion.div>
   )
 }
 
