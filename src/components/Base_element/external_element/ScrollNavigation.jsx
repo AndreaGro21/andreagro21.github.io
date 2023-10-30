@@ -28,7 +28,7 @@ function ScrollNavigation() {
             } else if (event.deltaY < 0) {
                 switch (location.pathname) {
                     case '/aboutMe':
-                        navigate('/');
+                        navigate('/myportfolio');
                         break;
                     case '/services':
                         navigate('/aboutMe');
