@@ -25,6 +25,8 @@ function ScrollNavigation() {
         const navigateToNextRoute = (currentRoute) => {
             switch (currentRoute) {
                 case '/':
+                    navigate('/aboutMe');
+                    break;
                 case '/myportfolio':
                     navigate('/aboutMe');
                     break;

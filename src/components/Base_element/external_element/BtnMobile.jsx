@@ -7,6 +7,9 @@ export default function BtnMobile() {
 
     const goForward = () => {
         switch (location.pathname) {
+            case '/':
+                navigate('/aboutMe');
+                break;
             case '/myportfolio':
                 navigate('/aboutMe');
                 break;
@@ -17,7 +20,7 @@ export default function BtnMobile() {
                 navigate('/projects');
                 break;
                 case '/projects':
-                    navigate('/myportfolio');
+                    navigate('/');
                     break;
             default:
                 break;
@@ -28,7 +31,7 @@ export default function BtnMobile() {
     const goBackward = () => {
         switch (location.pathname) {
             case '/aboutMe':
-                navigate('/myportfolio');
+                navigate('/');
                 break;
             case '/services':
                 navigate('/aboutMe');
@@ -36,9 +39,12 @@ export default function BtnMobile() {
             case '/projects':
                 navigate('/services');
                 break;
-                case '/myportfolio':
+                case '/':
                     navigate('/projects');
                     break;
+                    case '/myportfolio':
+                        navigate('/projects');
+                        break;
             default:
                 break;
         }

@@ -54,7 +54,7 @@
 
         span {
             font-size: 5.5rem;
-            
+
         }
     }
 
@@ -103,6 +103,7 @@
         background-position: 135% 110%;
         background-size: 100%;
         padding-top: 60px;
+
         .my-photo {
             display: none;
         }
@@ -183,20 +184,24 @@
             box-sizing: content-box;
             padding: 2px;
         }
-        .aboutme-presentation{
+
+        .aboutme-presentation {
             width: 80%;
- 
+
             font-size: .8rem;
         }
+
         .curious {
             font-size: .8rem;
             text-align: left;
         }
-        .mobile-info{
-          justify-content: flex-start;
-          gap: 10px;
+
+        .mobile-info {
+            justify-content: flex-start;
+            gap: 10px;
         }
-        .earth{
+
+        .earth {
             left: 20%;
         }
     }
@@ -401,100 +406,100 @@
 
 @keyframes mynameMobile {
     from {
-      color: #33cd089c;
-      opacity: 0;
-      transform: scale(0);
-    } 
-  
-    to {
-      color: #FFF;
-      transform: translate(1);
-      opacity: 1;
-    
+        color: #33cd089c;
+        opacity: 0;
+        transform: scale(0);
     }
-  }
-  @keyframes myJobMobile {
+
+    to {
+        color: #FFF;
+        transform: translate(1);
+        opacity: 1;
+
+    }
+}
+
+@keyframes myJobMobile {
     from {
         color: #FFF;
-      opacity: 0;
-      transform: scale(0);
-    } 
-  
+        opacity: 0;
+        transform: scale(0);
+    }
+
     to {
-      color: #FFF;
-      filter: drop-shadow(0px 0px 10px #08f45ffd);
-      transform: translate(1);
-      opacity: 1;
-    
+        color: #FFF;
+        filter: drop-shadow(0px 0px 10px #08f45ffd);
+        transform: translate(1);
+        opacity: 1;
+
     }
-  }
-  
-  
-  @keyframes prese {
+}
+
+
+@keyframes prese {
     0% {
-      opacity: 0;
+        opacity: 0;
     }
-  
+
     100% {
-      opacity: 1;
+        opacity: 1;
     }
-  }
-  
-  
-  @keyframes rotateinfo {
+}
+
+
+@keyframes rotateinfo {
     0% {
-      transform: translateX(0%);
-      scale: 1;
+        transform: translateX(0%);
+        scale: 1;
     }
-  
+
     10% {
-      transform: translateX(300%);
-      scale: .6;
+        transform: translateX(300%);
+        scale: .6;
     }
-  
+
     30% {
-      scale: .4;
+        scale: .4;
     }
-  
+
     40% {
-      transform: translateX(400%);
-      scale: .1;
-      opacity: 0;
+        transform: translateX(400%);
+        scale: .1;
+        opacity: 0;
     }
-  
+
     50% {
-      transform: translateX(-100%);
-      opacity: 0;
+        transform: translateX(-100%);
+        opacity: 0;
     }
-  
+
     60% {
-      opacity: .2;
+        opacity: .2;
     }
-  
+
     70% {
-      opacity: .4;
+        opacity: .4;
     }
-  
+
     80% {
-      opacity: .6;
+        opacity: .6;
     }
+
     90% {
-      transform: translateX(0%);
-      opacity: 1;
+        transform: translateX(0%);
+        opacity: 1;
     }
+
     100% {
-      transform: translateX(0%);
-      opacity: 1;
+        transform: translateX(0%);
+        opacity: 1;
     }
-  }
-  
-  .egg{
-  position: absolute;
+}
+
+.egg {
+    position: absolute;
     color: black;
     top: 90%;
     left: 95%;
-  
-  }
-  
-  
-  
+
+}
