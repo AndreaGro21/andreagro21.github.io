@@ -6,14 +6,12 @@
     }
 
     h1 {
-        font-size: 2rem !important;
+        font-size: 2rem ;
         padding-top: 10px;
         text-align: center;
     }
 
-    footer {
-        display: none;
-    }
+
 }
 
 //NAV
@@ -308,11 +306,13 @@
         a {
             width: 100%;
             z-index: 1;
+            height: 70dvh;
+            padding-bottom: 70px;
 
             img {
                 position: relative;
                 z-index: -1;
-                height: 60dvh;
+               
                 width: 95%;
                 align-self: center;
             }
@@ -493,6 +493,45 @@
     100% {
         transform: translateX(0%);
         opacity: 1;
+    }
+}
+
+
+
+
+@media screen and (max-height:750px) {
+    main{
+    h1{
+        font-size: 1.4rem;
+    }
+}
+    .aboutme-container {
+
+        p {
+
+            font-size: .9rem;
+            line-height: 1.2;
+        }
+    }
+
+        .tec-skills {
+            img {
+                width: 3rem;
+            }
+        }
+
+
+
+}
+
+@media screen and (max-height:900px) {
+    .aboutme-container {
+
+        p {
+
+            font-size: 1rem;
+            line-height: 1.4;
+        }
     }
 }
 
