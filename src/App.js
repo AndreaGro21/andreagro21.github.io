@@ -1,5 +1,5 @@
 import './App.scss';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { HashRouter } from "react-router-dom";
 import AnimatedCursor from "react-animated-cursor"
 import Mouse from './components/Base_element/external_element/Mouse.jsx';
 import MainRoute from './components/Route/Router';
@@ -10,7 +10,7 @@ function App() {
   const isDesktop = window.innerWidth > 840;
   return (
     <div className="App">
-      <Router>
+         <HashRouter basename="/">
         <ScrollNavigation />
         {isDesktop ? <Mouse /> : null}
         {isDesktop ? <AnimatedCursor
@@ -34,7 +34,7 @@ function App() {
         <Nav />
         <MainRoute />
         {isDesktop ? <Footer /> : null}
-      </Router>
+        </HashRouter>
     </div>
   );
 }
