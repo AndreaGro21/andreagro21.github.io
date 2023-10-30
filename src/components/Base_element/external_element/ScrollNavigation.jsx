@@ -7,8 +7,12 @@ function ScrollNavigation() {
 
     useEffect(() => {
         const handleScroll = (event) => {
+            console.log(location.pathname)
             if (event.deltaY > 0) {
                 switch (location.pathname) {
+                    case '/':
+                        navigate('/aboutMe');
+                        break;
                     case '/myportfolio':
                         navigate('/aboutMe');
                         break;
@@ -32,8 +36,10 @@ function ScrollNavigation() {
                     case '/projects':
                         navigate('/services');
                         break;
+                        
                     default:
                         break;
+
                 }
             }
         };
