@@ -4,6 +4,7 @@ import earth from "../assets/img/BackGround/earth.webp";
 import Link from "../components/LogoLinks";
 import BtnMobile from '../components/Base_element/external_element/BtnMobile';
 import {motion} from "framer-motion"
+import { useLocation } from "react-router-dom";
 const phrases = [
   {
     lang: 'english',
@@ -24,6 +25,7 @@ const phrases = [
 ];
 
 function AboutMe() {
+  const location = useLocation();
   const [currentLanguageIndex, setCurrentLanguageIndex] = useState(0);
   const currentPhrase = phrases[currentLanguageIndex].text;
   const [displayedText, setDisplayedText] = useState('');
@@ -50,9 +52,9 @@ function AboutMe() {
 
   return (
     <motion.div
-    initial={{width:0}}
+   initial={{width:0,}}
     animate={{width:"100%"}}
-    exit={{width:window.innerWidth, transition:{duration:0.1}
+    exit={{width:"100%", transition:{duration:0.2} 
     }}
     >
     <main className="aboutme-container">

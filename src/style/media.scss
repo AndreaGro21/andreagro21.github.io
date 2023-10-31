@@ -6,7 +6,7 @@
     }
 
     h1 {
-        font-size: 2rem ;
+        font-size: 2rem;
         padding-top: 10px;
         text-align: center;
     }
@@ -15,7 +15,7 @@
 }
 
 //NAV
-@media screen and (min-width:250px) and (max-width:839px) {
+@media screen  and (max-width:839px) {
     header {
         height: 55px;
         width: 99%;
@@ -116,7 +116,7 @@
                 padding-top: 10px;
                 text-align: center;
                 font-size: 1.8rem;
-                height: 100px;
+                height: 10%;
             }
 
             .curious {
@@ -144,7 +144,6 @@
             }
 
             .btn-mobile_container {
-
                 button {
                     width: 40%;
                     padding: 20px;
@@ -278,14 +277,12 @@
         h2 {
             font-size: 2rem;
             padding: 3rem 0 10px 0;
-
         }
 
         img {
             width: 4rem;
         }
     }
-
 }
 
 // Project mobile & tablette
@@ -312,7 +309,7 @@
             img {
                 position: relative;
                 z-index: -1;
-               
+
                 width: 95%;
                 align-self: center;
             }
@@ -354,9 +351,10 @@
             }
 
             .arrow-right {
+              
                 &:hover {
                     filter: drop-shadow(0 0 5mm rgb(103, 229, 24));
-                    transform: translateX(-30px) rotate(-60deg);
+                    transform: translateX(-30px) ;
                 }
             }
         }
@@ -496,39 +494,38 @@
     }
 }
 
-
-
-
+//general height
 @media screen and (max-height:750px) {
-    main{
-    h1{
-        font-size: 1.4rem;
+    main {
+        h1 {
+            font-size: 1.4rem;
+        }
     }
-}
+    .aboutme-container .aboutme-presentation {
+        height: 50dvh;
+        font-size: 0.9rem;
+        line-height: 1.2;
+    }
     .aboutme-container {
-
-        p {
-
-            font-size: .9rem;
-            line-height: 1.2;
+      
+        .curious{
+            display: none;
         }
     }
 
-        .tec-skills {
-            img {
-                width: 3rem;
-            }
+    .tec-skills {
+        img {
+            width: 1.5rem;
         }
-
-
-
+    }
+    .main-service h3 {
+        font-size: 1rem;
+    }
 }
 
 @media screen and (max-height:900px) {
     .aboutme-container {
-
         p {
-
             font-size: 1rem;
             line-height: 1.4;
         }

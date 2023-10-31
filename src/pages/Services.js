@@ -24,7 +24,7 @@ export default function Services() {
     <motion.div
     initial={{width:0}}
     animate={{width:"100%"}}
-    exit={{width:"100%", transition:{duration:0.1}
+    exit={{width:window.innerWidth, transition:{duration:0.2}
     }}
     >
     <main className="main-service">

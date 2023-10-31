@@ -28,7 +28,7 @@ const projectsData = [
         projectDes: `Really challenging for this debugging project,
       a major events company found itself without a developer, 
       I threw myself into this project with specific requirements and little time available.`,
-        stack: "",
+        stack: `#JAVASCRIPT #REACT #HTML #FIGMA #GIT #JEST`,
         source: event77,
         link: 'https://github.com/AndreaGro21/724events'
     },
