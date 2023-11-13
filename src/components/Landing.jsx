@@ -20,7 +20,6 @@ const Landing = () => {
       </video>
       <Introduction />
       {isDesktop ?  <a className="egg" href="https://www.facebook.com/andrea.gronchi.7/" target="_blank" rel="noopener noreferrer">FB</a> : null}
-     
       {!isDesktop ? <BtnMobile /> : null}
     </div>
   );

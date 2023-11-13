@@ -10,7 +10,7 @@ function App() {
   const isDesktop = window.innerWidth > 840;
   return (
     <div className="App">
-         <HashRouter basename="/">
+      <HashRouter basename="/">
         <ScrollNavigation />
         {isDesktop ? <Mouse /> : null}
         {isDesktop ? <AnimatedCursor
@@ -34,7 +34,7 @@ function App() {
         <Nav />
         <MainRoute />
         {isDesktop ? <Footer /> : null}
-        </HashRouter>
+      </HashRouter>
     </div>
   );
 }

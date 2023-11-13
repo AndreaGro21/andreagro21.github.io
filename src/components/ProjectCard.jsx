@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-function ProjectCard({ projectTitle, projectDes, source, id , idLink}) {
+function ProjectCard({ projectTitle,source, id, }) {
 
     return (
         <>
@@ -13,7 +13,7 @@ function ProjectCard({ projectTitle, projectDes, source, id , idLink}) {
                 </h2>
                 <img src={source} alt={projectTitle} />
                 <div className='desc-text'>
-                Click on the image for additional information
+                    Click on the image for additional information
                 </div>
             </Link >
         </>

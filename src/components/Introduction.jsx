@@ -3,15 +3,14 @@ function Introduction() {
 
   return (
     <div className="intro-container">
-            <h1 className= "myName">
+      <h1 className="myName">
         <span>A</span>ndrea <span>G</span>ronchi
       </h1>
       <h2 className="myJob">
         Web Developer <span> Front-end</span>
-        </h2>
+      </h2>
 
       <h3 className="presentation"> "Ready to travel in my universe?"</h3>
-
     </div>
   );
 }

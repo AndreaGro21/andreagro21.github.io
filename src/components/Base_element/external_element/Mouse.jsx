@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 const MouseTrail = () => {
-  
+
   const [trail, setTrail] = useState([]);
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 

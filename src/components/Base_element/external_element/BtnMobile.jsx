@@ -19,13 +19,12 @@ export default function BtnMobile() {
             case '/services':
                 navigate('/projects');
                 break;
-                case '/projects':
-                    navigate('/');
-                    break;
+            case '/projects':
+                navigate('/');
+                break;
             default:
                 break;
         }
-          
     };
 
     const goBackward = () => {
@@ -39,12 +38,12 @@ export default function BtnMobile() {
             case '/projects':
                 navigate('/services');
                 break;
-                case '/':
-                    navigate('/projects');
-                    break;
-                    case '/myportfolio':
-                        navigate('/projects');
-                        break;
+            case '/':
+                navigate('/projects');
+                break;
+            case '/myportfolio':
+                navigate('/projects');
+                break;
             default:
                 break;
         }
